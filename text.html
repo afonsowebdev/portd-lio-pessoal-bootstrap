@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio com Modal Dinâmico</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (opcional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ====== SEÇÃO PROJETOS ====== -->
+    <section class="py-5">
+        <div class="container-lg">
+
+            <h2 class="mb-4 text-center">Projetos</h2>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="/portdólio-pessoal-bootstrap/img/projetos-img/aurora-palace-hotel.png"
+                            class="card-img-top">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Aurora Palace</h5>
+                            <p class="card-text text-muted">
+                                Website institucional para hotel.
+                            </p>
+
+                            <button class="btn btn-outline-primary btn-sm open-modal" data-title="Aurora Palace"
+                                data-description="Projeto focado em UX, performance e design moderno para o setor hoteleiro."
+                                data-tech="HTML5, CSS3, Bootstrap 5, JavaScript" data-link="https://example.com">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="/portdólio-pessoal-bootstrap/img/projetos-img/aurora-palace-hotel.png"
+                            class="card-img-top">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Dashboard Financeiro</h5>
+                            <p class="card-text text-muted">
+                                Aplicação web interativa.
+                            </p>
+
+                            <button class="btn btn-outline-primary btn-sm open-modal" data-title="Dashboard Financeiro"
+                                data-description="Dashboard para controle financeiro pessoal com gráficos e relatórios."
+                                data-tech="HTML5, CSS3, Bootstrap 5, JavaScript, Chart.js"
+                                data-link="https://example.com">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MODAL ÚNICO ====== -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p id="modalDescription" class="text-muted"></p>
+
+                    <h6 class="mt-4">Tecnologias utilizadas</h6>
+                    <div id="modalTech"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <a id="modalLink" class="btn btn-primary" target="_blank">
+                        Ver projeto online
+                    </a>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script>
+        const buttons = document.querySelectorAll('.open-modal');
+
+        const modal = new bootstrap.Modal(
+            document.getElementById('projectModal')
+        );
+
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalTech = document.getElementById('modalTech');
+        const modalLink = document.getElementById('modalLink');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+
+                // Dados vindos do botão
+                const title = button.dataset.title;
+                const description = button.dataset.description;
+                const tech = button.dataset.tech.split(',');
+                const link = button.dataset.link;
+
+                // Preenche o modal
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modalLink.href = link;
+
+                // Limpa tecnologias anteriores
+                modalTech.innerHTML = '';
+
+                tech.forEach(item => {
+                    const badge = document.createElement('span');
+                    badge.className = 'badge bg-secondary me-2 mb-2';
+                    badge.textContent = item.trim();
+                    modalTech.appendChild(badge);
+                });
+
+                modal.show();
+            });
+        });
+    </script>
+</body>
+
+</html>

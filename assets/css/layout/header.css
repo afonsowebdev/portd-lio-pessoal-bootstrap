@@ -1,0 +1,188 @@
+header {
+  nav.navbar {
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    div.container {
+      a.navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+
+        font-family: var(--font-family-poppins);
+        font-weight: var(--font-weight--cormorant-semibold);
+        font-size: 1.6rem;
+        color: #333333;
+
+        span.navbar-span {
+          font-family: var(--font-family-poppins);
+          font-size: xx-small;
+          color: var(--primary-color);
+        }
+      }
+
+      div.group-right {
+        div.social-links {
+          a.social-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+
+            text-decoration: none;
+
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+
+            &.linkedin {
+              background-color: #0a66c2;
+              color: white;
+            }
+
+            &.github {
+              background-color: #333333;
+              color: white;
+            }
+
+            &.instagram {
+              background-color: #e4405f;
+              color: white;
+            }
+          }
+
+          button.btn-dark-mode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            outline: none;
+
+            border-radius: 50%;
+            background-color: var(--primary-color);
+
+            i.dark-mode {
+              color: white;
+            }
+          }
+        }
+
+        button.navbar-toggler {
+          border: none;
+          font-size: 1.5rem;
+          color: #333333;
+          outline: none;
+        }
+      }
+
+      div.offcanvas {
+        width: 400px;
+
+        div.offcanvas-header {
+          padding: 1.5rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h5.offcanvas-title {
+            font-family: var(--font-family-poppins);
+            font-weight: var(--font-weight--cormorant-semibold);
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+          }
+
+          button.btn-close {
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            margin: 0;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            opacity: 1;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+
+        div.offcanvas-body {
+          padding: 1.5rem;
+
+          ul.navbar-nav {
+            gap: 0.5rem;
+
+            li.nav-item {
+              a.nav-link {
+                padding: 0.75rem 1rem;
+                border-radius: 8px;
+                font-family: var(--font-family-poppins);
+                font-size: 1rem;
+                color: var(--secondary-color);
+                transition: all 0.3s ease;
+
+                &:hover,
+                &.active {
+                  color: var(--primary-color);
+                  background-color: rgba(230, 126, 35, 0.1);
+                }
+
+                &.dropdown-toggle {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                }
+              }
+
+              ul.dropdown-menu {
+                border: none;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 0.5rem;
+                background-color: #f8f9fa;
+
+                li {
+                  a.dropdown-item {
+                    padding: 0.5rem 1rem;
+                    border-radius: 6px;
+                    font-family: var(--font-family-poppins);
+                    font-size: 0.9rem;
+                    color: var(--secondary-color);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                      color: var(--primary-color);
+                      background-color: rgba(230, 126, 35, 0.1);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    nav.navbar {
+      div.container {
+        a.navbar-brand {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,388 @@
+/* ==========================================
+   Section About - Estilos Completos
+   ========================================== 
+*/
+
+/* Container principal da section */
+
+section.about {
+    background-color: #9f5b1f0b;
+
+    div.container {
+        div.row {
+            padding: 60px 0;
+
+            div.col-12 {
+                h2.about__title {
+                    font-family: var(--font-family-poppins);
+                    font-size: var(--font-size-poppins-large);
+                    font-weight: var(--font-weight-poppins);
+
+                    .subtitle__span {
+                        color: var(--primary-color);
+                        font-weight: 700;
+                    }
+                }
+
+                hr.about-underline {
+                    width: 80px;
+                    height: 4px;
+                    background-color: #E67E23;
+                    margin: 0 auto 40px;
+                    border: none;
+                    border-radius: 2px;
+                }
+            }
+
+            div.about-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                img {
+                    border-radius: 15px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                    max-width: 100%;
+                    height: auto;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            }
+
+            div.about-text {
+                p.about__description {
+                    font-family: var(--font-family-poppins);
+                    font-size: var(--font-size-poppins-base);
+                    font-weight: 400;
+                    text-align: justify;
+                    line-height: 1.8;
+                    margin-bottom: 20px;
+
+                    span.highlight {
+                        color: var(--primary-color);
+                        font-weight: 600;
+                    }
+
+                    span.geral-span {
+                        color: var(--primary-color);
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            div.about__buttons {
+                display: flex;
+                gap: 15px;
+                margin-top: 30px;
+                flex-wrap: wrap;
+
+                .btn {
+                    padding: 12px 30px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+
+                    &.btn-primary {
+                        background-color: var(--primary-color);
+                        border-color: var(--primary-color);
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #d35400;
+                            border-color: #d35400;
+                            transform: translateY(-2px);
+                            box-shadow: 0 5px 15px rgba(230, 126, 35, 0.3);
+                        }
+                    }
+
+                    &.btn-outline-primary {
+                        color: var(--primary-color);
+                        border-color: var(--primary-color);
+
+                        &:hover {
+                            background-color: #E67E23;
+                            color: #fff;
+                            transform: translateY(-2px);
+                            box-shadow: 0 5px 15px rgba(230, 126, 35, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile Small (até 375px) */
+@media (max-width: 375px) {
+    section.about {
+        div.container {
+            div.row {
+                padding: 6em 0;
+
+                div.about-text {
+                    p.about__description {
+                        text-align: center;
+                        font-size: smaller;
+                    }
+                }
+
+                div.about__buttons {
+                    .btn {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+/* Mobile Smale {até 420px} */
+@media (max-width: 420px) {
+    section.about {
+        div.container {
+            div.row {
+                padding: 6em 0;
+
+                div.about-text {
+                    p.about__description {
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+
+                div.about__buttons {
+                    .btn {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+/* Mobile Medium (361px - 480px) */
+/* @media (min-width: 361px) and (max-width: 480px) {
+    .about {
+        padding: 45px 0;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        padding: 15px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        padding: 20px 15px;
+    }
+
+    .about__description {
+        font-size: 0.8rem;
+        line-height: 1.7;
+    }
+
+    .about__buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .about__buttons .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 25px;
+    }
+} */
+
+/* Mobile Large (481px - 768px) */
+/* @media (min-width: 481px) and (max-width: 768px) {
+    .about {
+        padding: 50px 0;
+    }
+
+    .about__title {
+        font-size: 2.2rem;
+    }
+
+    .about-image {
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        padding: 25px 20px;
+    }
+
+    .about__description {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .about__buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .about__buttons .btn {
+        flex: 1;
+        max-width: 200px;
+        text-align: center;
+        padding: 12px 25px;
+    }
+} */
+
+/* Tablet (769px - 1024px) */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+    .about {
+        padding: 55px 0;
+    }
+
+    .about__title {
+        font-size: 2.3rem;
+    }
+
+    .about-image {
+        padding: 25px;
+    }
+
+    .about-image img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .about-text {
+        padding: 30px 25px;
+    }
+
+    .about__description {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .about__buttons {
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 35px;
+    }
+} */
+
+/* Desktop Small (1025px - 1200px) */
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about__title {
+        font-size: 2.5rem;
+    }
+
+    .about-image {
+        padding: 30px;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .about-text {
+        padding: 30px;
+    }
+} */
+
+/* Desktop Large (1201px+) */
+/* @media (min-width: 1201px) {
+    .about {
+        padding: 80px 0;
+    }
+
+    .about__title {
+        font-size: 3rem;
+    }
+
+    .about-image {
+        padding: 40px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        max-height: 600px;
+        object-fit: cover;
+    }
+
+    .about-text {
+        padding: 40px;
+    }
+
+    .about__description {
+        font-size: 1.1rem;
+        line-height: 1.9;
+    }
+} */
+
+/* ==========================================
+   Ajustes gerais de espaçamento
+   ========================================== */
+
+/* .about-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+} */
+
+/* Espaçamento entre colunas em mobile */
+/* @media (max-width: 768px) {
+    .about-image {
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    .about-underline {
+        margin-bottom: 30px;
+    }
+} */
+
+/* Desktop - imagem maior e centralizada */
+/* @media (min-width: 992px) {
+    .about-image {
+        justify-content: flex-end;
+        padding: 40px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .about-text {
+        padding: 40px;
+    }
+} */

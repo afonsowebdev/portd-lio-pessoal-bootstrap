@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #E67E23;
+  --secondary-color: #2C3E50;
+
+  /* Font Poppins */
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-weight-poppins: 600;
+  --font-weight-poppins-bold: 700;
+  --font-style--poppins: normal;
+  --font-size-poppins-large: 2rem;
+  --font-size-poppins-base: 1rem;
+  --font-size-poppins-small: 0.875rem;
+
+  /* Font Cormorant */
+  --font-family-cormorant: "Cormorant Garamond", serif;
+  --font-weight-cormorant: 400;
+  --font-weight--cormorant-semibold: 600;
+  --font-weight--cormorant-bold: 700;
+  --font-style--cormorant: normal;
+  --font-size-cormorant-large: 1.5rem;
+  --font-size-cormorant-base: 1.2rem;
+  --font-size-cormorant-small: 0.975rem;
+}

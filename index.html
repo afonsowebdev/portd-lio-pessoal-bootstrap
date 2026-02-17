@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Portfílio profissional de Francisco Afonso, mostrando projetos e habilidades.">
+    <meta name="keywords" content="portfílio, projetos, habilidades, Francisco Afonso">
+    <meta name="author" content="Francisco Afonso">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome e Font BoxIcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- estilos personalizados -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Título da página -->
+    <title>Francisco Afonso | Portfólio Profissional</title>
+</head>
+
+<body>
+    <!-- Conteúdo da página -->
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Portfólio.pt <span class="navbar-span">Francisco Afonso</span>
+                </a>
+                <div class="group-right d-flex align-items-center gap-3 ">
+                    <div class="social-links d-flex align-items-center gap-1">
+                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank"
+                            class="social-link linkedin"><i class='bx bxl-linkedin '></i></a>
+                        <a href="https://github.com/franciscoafonso" target="_blank" class="social-link github"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="#" class="social-link instagram"><i class='bx bxl-instagram'></i></a>
+
+                        <button class="btn btn-dark-mode">
+                            <i class='bx bx-moon dark-mode'></i>
+                        </button>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portfólio Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#hero">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Projetos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#projects">Todos</a></li>
+                                    <li><a class="dropdown-item" href="#">Portfólios</a></li>
+                                    <li><a class="dropdown-item" href="#">E-commerces</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Apps</a></li>
+                                    <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experiência profissional</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Serviços</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Testemunhos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certificates">Certificados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center mt-4">
+
+                    <div class="col-md-7 hero-text mb-4 mb-md-4 mt-md-5">
+                        <div class="hero-text">
+                            <p class="span__hero-description mb-2">
+                                Desenvolvedor Web <span class="highlight">Full-Stack</span> & <span
+                                    class="highlight">UI/UX</span>
+                            </p>
+
+                            <h1 class="hero__title">
+                                Francisco <span class="title__span">Afonso</span>
+                            </h1>
+
+                            <p class="hero__description text-justify">
+                                Focado na criação de interfaces eficientes e responsivas, aplicando as melhores práticas
+                                de desenvolvimento para proporcionar experiências intuitivas e de alto desempenho.
+                            </p>
+
+                            <div class="hero__buttons mb-5">
+                                <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                                <a href="#projects" class="btn btn-outline-primary">Veja Meus Projetos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 hero-image text-center">
+                        <img src="assets/img/foto-perfil/foto-perfil.png" alt="Imagem de Francisco Afonso"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row align-items-center mt-5">
+
+                    <!-- Título -->
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="about__title">
+                            Sobre <span class="subtitle__span">Mim</span>
+                        </h2>
+                        <hr class="underline about-underline">
+                    </div>
+
+                    <!-- Imagem -->
+                    <div class="col-md-4  about-image mb-4 mb-md-0">
+                        <img src="./assets/img/sobre-img/about__image.jpg" alt="Imagem Sobre Mim" class="img-fluid">
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="col-md-8 about-text">
+                        <p class="about__description mb-3 text-justify">
+                            Sou Desenvolvedor <span class="highlight">Full-Stack</span>, com foco no desenvolvimento
+                            de soluções digitais completas desde o <span class="highlight">front-end</span> até ao
+                            <span class="highlight">back-end</span>. Tenho experiência na criação de landing pages,
+                            sites institucionais e e-commerces, aliando design funcional, código limpo e princípios
+                            de
+                            <span class="highlight">UX/UI</span>.
+                        </p>
+
+                        <p class="about__description mb-3 text-justify">
+                            Atualmente, aprofundo conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>,
+                            <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>,
+                            <strong>TypeScript</strong>, <strong>PHP</strong>, <strong>Bootstrap</strong>,
+                            <strong>MongoDB</strong> e <strong>MySQL</strong>, além de Git/GitHub e APIs.
+                        </p>
+
+                        <p class="about__description mb-3 text-justify">
+                            Sou uma pessoa analítica, criativa e orientada a resultados, com facilidade de trabalho
+                            em equipa e aprendizagem contínua.
+                        </p>
+
+                        <p class="about__description mb-3 text-justify">
+                            Procuro integrar projetos inovadores onde possa contribuir e crescer na área de
+                            <span class="geral-span">desenvolvimento web</span>.
+                        </p>
+
+                        <div class="about__buttons">
+                            <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                            <a href="#" class="btn btn-outline-primary" id="btnDownload" download="">Baixar
+                                Curriculo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 projects">
+            <div class="container-lg">
+                <div class="row g-4">
+
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="about__title">
+                            Meus <span class="subtitle__span">Projetos</span>
+                        </h2>
+                        <hr class="underline about-underline">
+                    </div>
+
+                    <!-- CARD 1 -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/aurora-palace-hotel.png" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Aurora <span class="geral-span">Palace Hotel</span></h5>
+                                <p class="card-text text-muted">
+                                    Website institucional desenvolvido para um hotel de luxo, com foco em UX, identidade
+                                    visual sofisticada e performance.
+                                </p>
+
+                                <button class="btn btn-outline-primary btn-sm open-modal"
+                                    data-title="Aurora Palace Hotel" data-description="
+                                    Projeto criado para o setor hoteleiro, com o objetivo de transmitir sofisticação, conforto e confiança. O site foi desenvolvido com foco em experiência do utilizador, design responsivo e organização clara das informações.
+                                    " data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
+                                    data-link="https://aurorapalace.netlify.app/#">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/portfolio-francisco-afonso.png" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Portfólio <span class="geral-span">Pessoal</span></h5>
+                                <p class="card-text text-muted">
+                                    Portfólio pessoal desenvolvido para destacar competências técnicas, projetos e
+                                    identidade profissional.
+                                </p>
+
+                                <button class="btn btn-outline-primary btn-sm open-modal"
+                                    data-title="Portfílio Pessoal"
+                                    data-description="Portfólio pessoal criado para apresentar projetos, competências e experiência de forma clara e objetiva. O foco principal foi usabilidade, responsividade e uma comunicação visual moderna."
+                                    data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
+                                    data-link="https://portfoliofrancisc.netlify.app/">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/jbl.png" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title">J <span class="geral-span">B</span> L</h5>
+                                <p class="card-text text-muted">
+                                    Landing page desenvolvida para apresentar produtos de áudio JBL com foco em experiência sonora envolvente, design responsivo e usabilidade otimizada. 
+                                </p>
+
+                                <button class="btn btn-outline-primary btn-sm open-modal"
+                                    data-title="Portfílio Pessoal"
+                                    data-description="Projeto de front-end responsivo para a promoção de produtos JBL, com layout mobile-first, componentes interativos, navegação acessível e destaque visual de recursos chave dos modelos de áudio."
+                                    data-tech="HTML5, CSS3, JavaScript"
+                                    data-link="https://jblauditive.netlify.app/">
+                                    Ver detalhes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== MODAL ÚNICO ====== -->
+        <div class="modal fade" id="projectModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle"></h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p id="modalDescription" class="text-muted"></p>
+
+                        <h6 class="mt-4">Tecnologias utilizadas</h6>
+                        <div id="modalTech"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a id="modalLink" class="btn btn-primary" target="_blank">
+                            Ver projeto online
+                        </a>
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="experience__title">
+                            Minha <span class="subtitle__span">Experiência Profissional</span>
+                        </h2>
+                        <hr class="underline experience-underline">
+                        <p class="text-center mb-3">Aqui está um resumo da minha experiência profissional na área de
+                            desenvolvimento web.
+                        </p>
+                    </div>
+
+                    <div class="d-flex justify-content-space-between align-items-center gap-4">
+                        <div
+                            class="experience-timeline timeline mb-4 d-flex gap-4 justify-content-space-between flex-wrap">
+
+                            <div class="timeline-item">
+                                <h3 class="timeline-item__title text-center mb-3">Desenvolvedor Web Junior</h3>
+                                <span class="timeline-item__date mb-3 text-center">Jan 2022 - Dez 2022</span>
+                                <p class="timeline-item__description text-justify">
+                                    Trabalhei no desenvolvimento de sites institucionais e landing pages, focando na
+                                    criação de interfaces responsivas e otimizadas para SEO.
+                                </p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <h3 class="timeline-item__title text-center mb-3">Estagiário em Desenvolvimento Web
+                                </h3>
+                                <span class="timeline-item__date mb-3 text-center">Jul 2021 - Dez 2021</span>
+                                <p class="timeline-item__description text-justify">
+                                    Auxiliei na manutenção e atualização de websites, além de colaborar na
+                                    implementação de novas funcionalidades utilizando HTML, CSS e JavaScript.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="services__title">
+                            Meus <span class="subtitle__span">Serviços</span>
+                        </h2>
+                        <hr class="underline services-underline">
+                        <p class="text-center mb-3">Descubra os serviços que ofereço como desenvolvedor web
+                            full-stack.</p>
+                    </div>
+
+                    <div class="services-cards d-flex justify-content-center flex-wrap gap-4">
+
+                        <!-- Serviço 1 -->
+                        <div class="card service-card" style="width: 18rem;">
+                            <div class="card-body">
+                                <span class="service-icon-span mb-3 d-block text-center">
+                                    <i class='bx bx-code-alt'></i>
+                                </span>
+                                <h5 class="card-title">Desenvolvimento Front-End</h5>
+                                <p class="card-text">Criação de interfaces responsivas e atraentes utilizando HTML,
+                                    CSS e JavaScript.</p>
+
+                            </div>
+                        </div>
+                        <!-- Serviço 2 -->
+                        <div class="card service-card" style="width: 18rem;">
+                            <div class="card-body">
+                                <span class="service-icon-span mb-3 d-block text-center">
+                                    <i class='bx bxs-server service-icon'></i>
+                                </span>
+                                <h5 class="card-title">Desenvolvimento Back-End</h5>
+                                <p class="card-text">Implementação de servidores, bancos de dados e APIs com Node.js
+                                    e PHP.</p>
+                            </div>
+                        </div>
+                        <!-- Serviço 3 -->
+                        <div class="card service-card" style="width: 18rem;">
+                            <div class="card-body">
+                                <span class="service-icon-span mb-3 d-block text-center">
+                                    <i class='bx bxs-palette service-icon'></i>
+                                </span>
+                                <h5 class="card-title">Design UI/UX</h5>
+                                <p class="card-text">Criação de designs intuitivos focados na experiência do
+                                    usuário.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="skills__title">
+                            Minhas <span class="subtitle__span">Habilidades</span>
+                        </h2>
+                        <hr class="underline skills-underline">
+                        <p class="text-center mb-3">Aqui estão algumas das minhas principais habilidades técnicas.
+                        </p>
+                    </div>
+
+                    <div class="skills d-flex justify-content-space-between gap-4">
+                        <div class="col-md-6 text-center">
+                            <h2 class="skills-subtitle">Front-<span class="">End</span></h2>
+                            <!-- <hr class="underline"> -->
+
+                            <div class="frontend">
+                                <ul class="skills__list d-flex flex-wrap justify-content-center gap-4">
+                                    <li class="skills__item" id="html"> <i class='bx bxl-html5'></i> HTML5</li>
+                                    <li class="skills__item" id="css"> <i class='bx bxl-css3'></i> CSS3</li>
+                                    <li class="skills__item" id="js"> <i class='bx bxl-javascript'></i> JavaScript
+                                    </li>
+                                    <li class="skills__item" id="react"> <i class='bx bxl-react'></i> React</li>
+                                    <li class="skills__item" id="angular"> <i class='bx bxl-angular'></i> Angular
+                                    </li>
+                                    <li class="skills__item" id="bootstrap"> <i class='bx bxl-bootstrap'></i>
+                                        Bootstrap
+                                    </li>
+                                    <li class="skills__item" id="tailwind"> <i class='bx bxl-tailwind-css'></i>
+                                        Tailwind
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-center">
+                            <h2 class="skills-subtitle">Back-<span class="">End</span></h2>
+                            <!-- <hr class="underline"> -->
+                            <div class="backend">
+                                <ul class="skills__list d-flex flex-wrap justify-content-center gap-4">
+                                    <li class="skills__item" id="nodejs"> <i class='bx bxl-nodejs'></i> Node.js
+                                    </li>
+                                    <li class="skills__item" id="php"> <i class='bx bxl-php'></i> PHP</li>
+                                    <li class="skills__item" id="python"> <i class='bx bxl-python'></i> Python</li>
+                                    <li class="skills__item" id="mysql"> <i class='bx bxs-data'></i> MySQL</li>
+                                    <li class="skills__item" id="mongodb"> <i class='bx bxl-mongodb'></i> MongoDB
+                                    </li>
+                                    <li class="skills__item" id="git"> <i class='bx bxl-git'></i> Git</li>
+                                    <li class="skills__item" id="github"> <i class='bx bxl-github'></i> GitHub
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="testemunials__title">
+                            Testemunhos <span class="subtitle__span">de Clientes</span>
+                        </h2>
+                        <hr class="underline testemunials-underline">
+                        <p class="text-center mb-3">O que meus clientes dizem sobre meu trabalho.</p>
+                    </div>
+
+                    <div class="testemunials-cards d-flex justify-content-center flex-wrap gap-4">
+
+                        <!-- Testemunho 1 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-01.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pr. Lucas Ramiro <span class="span-profission">Design
+                                                de Interfaces (UI/UX)</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Orientador Acadêmico</span>
+                                        <p class="card-text">
+                                            "Durante o trabalho de pesquisa que orientamos juntos, percebi o quanto
+                                            Francisco Afonso é comprometido com a qualidade do que entrega."</p>
+                                        <p class="card-text">
+                                            Sempre trouxe questionamentos relevantes, buscou referências por conta
+                                            própria.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 2 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-02.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pr. Tiago Ribeiro <span
+                                                class="span-profission">Engenharia de Software</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Professor Universitário</span>
+                                        <p class="card-text">Acompanhei o desenvolvimento acadêmico do Francisco
+                                            Afonso ao longo de dois semestres, e sempre me impressionou sua
+                                            capacidade de transformar conceitos complexos em soluções práticas e bem
+                                            estruturadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 3 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-03.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Martins de Jesus <span
+                                                class="span-profission">Desenvolvedor Front-End</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Colega de projeto</span>
+                                        <p class="card-text">Trabalhar com o Francisco Afonso no nosso projeto
+                                            independente foi uma das experiências mais produtivas que já tive. Ele
+                                            tem uma forma muito fluida de colaborar: sabe ouvir, sabe propor e sabe
+                                            ajustar o rumo quando necessário</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 4 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-04.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barbara Raquel <span class="span-profission">Marketing
+                                                Digital</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Colega de projeto</span>
+                                        <p class="card-text">Tive o prazer de trabalhar com o Francisco Afonso em um
+                                            projeto de desenvolvimento web, onde ele foi responsável pela criação do
+                                            front-end. Sua atenção aos detalhes e dedicação para garantir que a
+                                            interface fosse intuitiva e atraente foram notáveis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 5 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-05.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lukenia Monteiro <span class="span-profission">Ciência de
+                                                Dados</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Colega de projeto</span>
+                                        <p class="card-text">Trabalhar com o Francisco Afonso no nosso projeto
+                                            independente foi uma das experiências mais produtivas que já tive. Ele
+                                            tem uma forma muito fluida de colaborar: sabe ouvir, sabe propor e sabe
+                                            ajustar o rumo quando necessário</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testemunho 6 -->
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/testemunhos-img/foto-perfil-06.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jéssica Miranda <span class="span-profission">Produção
+                                                Audiovisual</span></h5>
+                                        <span class="card-subtitle mb-2 text-muted">Colaborador Criativo</span>
+                                        <p class="card-text">Nos projetos criativos que desenvolvemos lado a lado, o
+                                            Francisco Afonso sempre trouxe ideias que iam muito além do óbvio. O que
+                                            eu mais admiro é a habilidade de transformar inspiração em execução e
+                                            sempre com muito cuidado estético e atenção aos detalhes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="certificates" id="certificates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="certificado__title">
+                            Meus <span class="subtitle__span">Certificados</span>
+                        </h2>
+                        <hr class="underline certificado-underline">
+                        <p class="text-center mb-3">Aqui estão alguns dos meus principais certificados.</p>
+                    </div>
+
+                    <div class="certificado-cards d-flex justify-content-center flex-wrap gap-4">
+
+                        <!-- Certificado 1 -->
+                        <div class="card" style="width: 22rem;">
+                            <img src="img/certificado-img/certificado-modulo-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML e CSS Módulo 1 - <span class="geral-span">Curso Em
+                                        Vídeo</span></h5>
+                                <p class="card-text">Certificado de 40h, concluído em 29 de Fevereiro de 2024</p>
+                                <a href="#" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 2 -->
+                        <div class="card" style="width: 22rem;">
+                            <img src="img/certificado-img/certificado-modulo-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML e CSS Módulo 2 - <span class="geral-span">Curso Em
+                                        Vídeo</span></h5>
+                                <p class="card-text">Certificado de 40h, concluído em 29 de Fevereiro de 2024</p>
+                                <a href="#" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+
+                        <!-- Certificado 3 -->
+                        <div class="card" style="width: 22rem;">
+                            <img src="img/certificado-img/certificado-jscript.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript - <span class="geral-span">Curso Em Vídeo</span>
+                                </h5>
+                                <p class="card-text">Certificado de 40h, concluído em 09 de Setembro de 2024</p>
+                                <a href="#" class="btn btn-primary">Ver Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="contact__title">
+                            Entre em <span class="subtitle__span">Contato</span>
+                        </h2>
+                        <hr class="underline contact-underline">
+                        <p class="text-center mb-3">Fique à vontade para entrar em contato comigo através do
+                            formulário abaixo.</p>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-4 contact-form">
+                                <div class="cards_container">
+                                    <a href="tel:+351916995148" target="_blank" class="contact-card phone">
+
+                                        <div class="card-icon">
+                                            <i class='bx bxs-phone'></i>
+                                        </div>
+
+                                        <div class="card-infos">
+                                            <p>Telefone</p>
+                                            <span>
+                                                (+351) 91 699-5148
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" target="_blank" class="contact-card location">
+
+                                        <div class="card-icon">
+                                            <i class='bx bx-current-location'></i>
+                                        </div>
+
+                                        <div class="card-infos">
+                                            <p>Localização</p>
+                                            <span>
+                                                Bragança, Portugal
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <a href="mailto:afonso.webdev@gmail.com" target="_blank" class="contact-card email">
+
+                                        <div class="card-icon">
+                                            <i class='bx bxl-gmail'></i>
+                                        </div>
+
+                                        <div class="card-infos">
+                                            <p>E-mail</p>
+                                            <span>
+                                                afonso.webdev@gmail.com
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://wa.me/351916995148?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20saber%20mais%20sobre%20seu%20trabalho!"
+                                        target="_blank" class="contact-card whatsapp">
+
+                                        <div class="card-icon">
+                                            <i class='bx bxl-whatsapp'></i>
+                                        </div>
+
+                                        <div class="card-infos">
+                                            <p>WhatsApp</p>
+                                            <span>
+                                                (+351) 916 995 148
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <h4 class="social-media-title">
+                                    Siga-me <span class="geral-span">nas redes sociais</span>
+                                </h4>
+
+                                <div class="social-media">
+
+                                    <a href="https://github.com/afonsowebdev" target="_blank" class="icon-link github">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank"
+                                        class="icon-link linkedin">
+                                        <i class='bx bxl-linkedin'></i>
+                                    </a>
+
+                                    <a href="" class="icon-link instagram">
+                                        <i class='bx bxl-instagram'></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 contact-form">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="First name"
+                                                aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Last name"
+                                                aria-label="Last name">
+                                        </div>
+
+
+                                        <div class="mb-3 mt-3">
+                                            <input type="email" class="form-control" id="email" placeholder="Seu E-mail"
+                                                name="email">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <textarea class="form-control" id="message" rows="5"
+                                                placeholder="Sua Mensagem" name="message"></textarea>
+                                        </div>
+
+                                        <div class="d-grid gap-2">
+                                            <button type="submit" class="btn btn-primary btn-block">Enviar
+                                                Mensagem</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-12 text-center mb-3 footer-content d-flex justify-content-center align-items-center flex-column">
+                    <p class="footer-text">&copy; 2024 Francisco Ngonde Afonso. Todos os direitos reservados.</p>
+
+                    <div class="footer-social-media d-flex gap-3">
+                        <a href="" class="icon-link github">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="" class="icon-link linkedin">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="" class="icon-link instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
