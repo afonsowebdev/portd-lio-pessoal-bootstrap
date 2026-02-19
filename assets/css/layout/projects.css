@@ -44,6 +44,23 @@ section.projects {
                             font-size: var(--font-size-poppins-small);
                             color: var(--secundary-color);
                         }
+
+                        button.open-modal {
+                            color: var(--white-color);
+                            background-color: var(--primary-color);
+                            border: 1px solid var(--primary-color);
+                            transition: all 0.3s ease-out;
+
+                            &:hover {
+                                background-color: transparent;
+                                color: var(--primary-color);
+                                border: 2px solid var(--primary-color);
+                            }
+
+                            .data-title {
+                                color: var(--primary-color);
+                            }
+                        }
                     }
                 }
             }
