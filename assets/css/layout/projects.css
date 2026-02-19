@@ -27,6 +27,15 @@ section.projects {
 
             div {
                 div.card {
+                    border: none;
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+                    }
+
                     div.card-body {
                         h5.card-title {
                             font-family: var(--font-family-poppins);
@@ -48,17 +57,13 @@ section.projects {
                         button.open-modal {
                             color: var(--white-color);
                             background-color: var(--primary-color);
-                            border: 1px solid var(--primary-color);
-                            transition: all 0.3s ease-out;
+                            
+                            transition: all 0.3s ease;
 
                             &:hover {
                                 background-color: transparent;
                                 color: var(--primary-color);
-                                border: 2px solid var(--primary-color);
-                            }
-
-                            .data-title {
-                                color: var(--primary-color);
+                                border: 1px solid var(--primary-color);
                             }
                         }
                     }
