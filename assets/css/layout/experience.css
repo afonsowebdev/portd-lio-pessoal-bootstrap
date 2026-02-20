@@ -1,0 +1,53 @@
+section.experience {
+    padding: 6rem 0;
+    background-color: #d9d4cf27;
+
+    div.container-lg {
+        div.col-12 {
+            h2.about__title {
+                font-family: var(--font-family-poppins);
+                font-size: var(--font-size-poppins-large);
+                font-weight: var(--font-weight-poppins);
+
+                .subtitle__span {
+                    color: var(--primary-color);
+                    font-weight: 700;
+                }
+            }
+
+            hr.about-underline {
+                width: 80px;
+                height: 4px;
+                background-color: #E67E23;
+                margin: 0 auto;
+                border: none;
+                border-radius: 2px;
+            }
+
+            p.text-muted {
+                color: var(--secondary-color);
+                margin: 0 auto 40px;
+            }
+
+        }
+
+        div.row {
+            div {
+                div.card {
+                    transition: transform .3s ease, box-shadow .3s ease;
+
+                    &:hover {
+                        transform: translateY(-6px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+                    }
+                }
+
+                div.card-body {
+                    h5.fw-semibold {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
