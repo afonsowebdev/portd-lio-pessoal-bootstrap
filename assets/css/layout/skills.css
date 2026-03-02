@@ -67,6 +67,7 @@ section.skills {
                                 border: none;
                                 outline: hidden;
                                 box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+                                cursor: pointer;
                                 transition: transform .3s ease, box-shadow .3s ease;
 
 

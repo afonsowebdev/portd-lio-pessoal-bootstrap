@@ -1,11 +1,11 @@
-section.testimonials {
+section.certificates {
     padding: 6rem 0;
-    
+    background-color: #d9d4cf27;
 
     div.container {
         div.row {
             div.col-12 {
-                h2.testemunials__title {
+                h2.certificado__title {
                     font-family: var(--font-family-poppins);
                     font-size: var(--font-size-poppins-large);
                     font-weight: var(--font-weight-poppins);
@@ -16,7 +16,7 @@ section.testimonials {
                     }
                 }
 
-                hr.testemunials-underline {
+                hr.certificado-underline {
                     width: 80px;
                     height: 4px;
                     background-color: #E67E23;
@@ -32,7 +32,11 @@ section.testimonials {
 
             }
 
-            div.testemunials-cards {
+            div.certificado-cards {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
 
                 div.card {
                     background-color: #fff;
@@ -42,7 +46,7 @@ section.testimonials {
                     outline: hidden;
                     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
                     cursor: pointer;
-                   
+
                     transition: transform .3s ease, box-shadow .3s ease;
 
                     &:hover {
@@ -51,18 +55,18 @@ section.testimonials {
                     }
 
                     div.card-body{
-                        h5.card-title {
-                            color: var(--primary-color);
+                        h6.fw-semibold {
+                            color: var(--secondary-color);
+
+                            span.subtitle__span {
+                                color: var(--primary-color);
+                                font-weight: 700;
+                            }
                         }
 
-                        span.span-profission {
+                        p.small.text-muted {
                             color: var(--secondary-color);
                         }
-
-                        p.card-text {
-                            color: var(--secondary-color);
-                        }
-                        
                     }
                 }
             }
