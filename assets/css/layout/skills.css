@@ -1,0 +1,97 @@
+section.skills {
+    padding: 6rem 0;
+    background-color: #d9d4cf27;
+
+    div.container {
+        div.row {
+            div.col-12 {
+                h2.skills__title {
+                    font-family: var(--font-family-poppins);
+                    font-size: var(--font-size-poppins-large);
+                    font-weight: var(--font-weight-poppins);
+
+                    .subtitle__span {
+                        color: var(--primary-color);
+                        font-weight: 700;
+                    }
+                }
+
+                hr.skills-underline {
+                    width: 80px;
+                    height: 4px;
+                    background-color: #E67E23;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 2px;
+                }
+
+                p.text-center {
+                    color: var(--secondary-color);
+                    margin: 0 auto 40px;
+                }
+
+            }
+
+
+            div.skills {
+                div.col-md-6 {
+                    h2.skills-subtitle {
+                        font-family: var(--font-family-poppins);
+                        font-size: var(--font-size-poppins-large);
+                        font-weight: var(--font-weight-poppins);
+
+                        span {
+                            color: var(--primary-color);
+                            font-weight: 700;
+                        }
+                    }
+
+                    hr.underline {
+                        width: 80px;
+                        height: 4px;
+                        background-color: #E67E23;
+                        margin: 0 auto;
+                        border: none;
+                        border-radius: 2px;
+                    }
+
+                    div.frontend,
+                    div.backend {
+                        ul.skills__list {
+
+                            li.skills__item {
+                                list-style: none;
+                                background-color: #fff;
+                                padding: 0.70rem;
+                                border-radius: 8px;
+                                border: none;
+                                outline: hidden;
+                                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+                                transition: transform .3s ease, box-shadow .3s ease;
+
+
+                                &:hover {
+                                    transform: translateY(-6px);
+                                    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+                                }
+
+                                i.skill-icon {
+                                    color: var(--primary-color);
+                                }
+
+                                span.skill-name {
+                                    display: block;
+                                    font-size: var(--font-size-poppins-base);
+                                    color: var(--secondary-color);
+                                    font-weight: var(--font-weight-poppins-bold);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

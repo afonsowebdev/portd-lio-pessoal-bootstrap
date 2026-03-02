@@ -1,0 +1,80 @@
+section.services {
+    background-color: var(--color-secondary);
+    padding: 4rem 0;
+
+    div.container {
+
+        div.row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            div.col-12 {
+                h2.services__title {
+                    font-family: var(--font-family-poppins);
+                    font-size: var(--font-size-poppins-large);
+                    font-weight: var(--font-weight-poppins);
+
+                    .subtitle__span {
+                        color: var(--primary-color);
+                        font-weight: 700;
+                    }
+                }
+
+                hr.services-underline {
+                    width: 80px;
+                    height: 4px;
+                    background-color: #E67E23;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 2px;
+                }
+
+                p.text-center {
+                    color: var(--secondary-color);
+                    margin: 0 auto 20px;
+                }
+
+            }
+
+
+            div.services-cards {
+
+                div.service-card {
+                    background-color: #fff;
+                    padding: 1rem;
+                    border-radius: 8px;
+                    border: none;
+                    outline: hidden;
+                    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+                    flex: 1 1 calc(33.333% - 2rem);
+                    transition: transform .3s ease, box-shadow .3s ease;
+
+                    &:hover {
+                        transform: translateY(-6px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+                    }
+
+                    div.card-body{
+                        span.service-icon-span {
+                            width: 40px;
+                            height: 40px;
+                            
+                            border: 1px solid var(--primary-color);
+                            border-radius: 50%;
+                            
+
+                            font-size: 1rem;
+                            color: var(--primary-color);
+                        }
+
+                        h5.card-title {
+                            margin-top: 1rem;
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
