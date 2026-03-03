@@ -78,3 +78,21 @@ section.services {
         }
     }
 }
+
+@media (max-width: 768px) {
+    section.services {
+        div.container {
+            div.row {
+                div.services-cards {
+                    flex-direction: column;
+                    align-items: center;
+
+                    div.service-card {
+                        flex: 1 1 100%;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
