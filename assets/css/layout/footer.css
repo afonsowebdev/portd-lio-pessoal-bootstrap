@@ -1,0 +1,15 @@
+footer.footer-container {
+
+    background-color: #d9d4cf27;
+    
+    div.container {
+        div.row {
+            div.col-12 {
+                p.text-center {
+                    margin: 0;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
