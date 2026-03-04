@@ -152,46 +152,46 @@ section.contact {
                             }
                         }
 
-                        form.contact-form {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1rem;
-
+                        form.contact__form {
                             padding: 1rem;
                             border-radius: 8px;
-                            border: none;
-                            outline: hidden;
                             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
 
-                            input.form-control,
-                            textarea.form-control {
-                                border-radius: 8px;
-                                border: 1px solid var(--primary-color);
-                                padding: 0.75rem;
-                                font-size: 1rem;
-                                color: var(--secondary-color);
-                                transition: border-color .3s ease;
+                            div.col-md-6,
+                            div.col-md-12 {
 
-                                &:focus {
-                                    border-color: var(--primary-color);
+                                label {
+                                    display: block;
+                                    margin-bottom: 0.5rem;
+                                    color: #000;
+                                    font-weight: 400;
+                                }
+
+                                input,
+                                textarea {
+                                    width: 100%;
+                                    padding: 0.75rem;
+                                    border-radius: 4px;
                                     outline: none;
                                 }
                             }
 
-                            button.btn-primary {
-                                align-self: flex-start;
-                                background-color: var(--primary-color);
-                                color: #fff;
-                                border: none;
-                                padding: 0.75rem 1.5rem;
-                                border-radius: 8px;
-                                cursor: pointer;
-                                transition: background-color .3s ease;
+                            div.col-12 {
+                                display: flex;
+                                justify-content: flex-end;
 
-                                &:hover {
-                                    background-color: transparent;
-                                    border: 1px solid var(--primary-color);
-                                    color: var(--primary-color);
+                                button {
+                                    background-color: var(--primary-color);
+                                    color: #fff;
+                                    border: none;
+                                    padding: 0.75rem 1.5rem;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    transition: background-color .3s ease;
+
+                                    &:hover {
+                                        background-color: var(--hover-color);
+                                    }
                                 }
                             }
                         }
