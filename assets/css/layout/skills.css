@@ -96,3 +96,21 @@ section.skills {
 
     }
 }
+
+/* Dark Mode Styles */
+.dark-mode section.skills div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.skills div.container div.row div div.skill-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.skills div.container div.row div div.skill-card div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.skills div.container div.row div div.skill-card div.card-body div.progress {
+    background-color: var(--border-color);
+}

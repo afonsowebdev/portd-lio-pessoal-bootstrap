@@ -98,6 +98,23 @@ section.hero {
 
 }
 
+/* Dark Mode Styles */
+.dark-mode section.hero .hero-text .span__hero-description {
+  color: var(--text-color);
+}
+
+.dark-mode section.hero .hero-text .hero__title {
+  color: var(--text-color);
+}
+
+.dark-mode section.hero .hero-text .hero__description {
+  color: var(--text-color);
+}
+
+.dark-mode section.hero .hero-image img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 575px) {
   section.hero {
     padding: 6em 0;

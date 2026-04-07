@@ -8,3 +8,14 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

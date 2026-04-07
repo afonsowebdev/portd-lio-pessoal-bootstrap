@@ -186,3 +186,47 @@ header {
     }
   }
 }
+
+/* Dark Mode Styles */
+.dark-mode header nav.navbar {
+  background: rgba(26, 26, 26, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode header nav.navbar div.container a.navbar-brand {
+  color: var(--text-color);
+}
+
+.dark-mode header nav.navbar div.container div.group-right button.navbar-toggler {
+  color: var(--text-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-header h5.offcanvas-title {
+  color: var(--text-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
+  color: var(--text-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-body ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item {
+  color: var(--text-color);
+}
+
+.dark-mode header nav.navbar div.container div.offcanvas div.offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
+  background-color: rgba(255, 140, 66, 0.1);
+}

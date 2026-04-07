@@ -212,6 +212,23 @@ section.about {
     }
 } */
 
+/* Dark Mode Styles */
+.dark-mode section.about {
+    background-color: var(--bg-color);
+}
+
+.dark-mode section.about div.container div.row div.col-12 h2.about__title {
+    color: var(--text-color);
+}
+
+.dark-mode section.about div.container div.row div.about-text p.about__description {
+    color: var(--text-color);
+}
+
+.dark-mode section.about div.container div.row div.about-image img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 /* Mobile Large (481px - 768px) */
 /* @media (min-width: 481px) and (max-width: 768px) {
     .about {

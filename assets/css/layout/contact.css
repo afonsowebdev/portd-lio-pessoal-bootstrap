@@ -201,3 +201,45 @@ section.contact {
         }
     }
 }
+/* Dark Mode Styles */
+.dark-mode section.contact {
+    background-color: var(--bg-color);
+}
+
+.dark-mode section.contact div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-form {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-form div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-form div.card-body form input,
+.dark-mode section.contact div.container div.row div div.contact-form div.card-body form textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-form div.card-body form input::placeholder,
+.dark-mode section.contact div.container div.row div div.contact-form div.card-body form textarea::placeholder {
+    color: var(--text-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-info {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-info div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.contact div.container div.row div div.contact-info div.card-body p {
+    color: var(--text-color);
+}

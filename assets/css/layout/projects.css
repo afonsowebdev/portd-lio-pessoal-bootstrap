@@ -76,3 +76,34 @@ section.projects {
         }
     }
 }
+
+/* Dark Mode Styles */
+.dark-mode section.projects div.container-lg div.row div.col-12 h2.about__title {
+    color: var(--text-color);
+}
+
+.dark-mode section.projects div.container-lg div.row div.col-12 p.text-center {
+    color: var(--text-color);
+}
+
+.dark-mode section.projects div.container-lg div.row div div.card {
+    background-color: var(--card-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode section.projects div.container-lg div.row div div.card div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.projects div.container-lg div.row div div.card div.card-body p.card-text {
+    color: var(--text-color);
+}
+
+.dark-mode section.projects div.container-lg div.row div div.card div.card-body div.card-buttons a.btn {
+    color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+.dark-mode section.projects div.container-lg div.row div div.card div.card-body div.card-buttons a.btn:hover {
+    background-color: var(--primary-color);
+}

@@ -98,3 +98,25 @@ section.services {
         }
     }
 }
+
+/* Dark Mode Styles */
+.dark-mode section.services {
+    background-color: var(--bg-color);
+}
+
+.dark-mode section.services div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.services div.container div.row div div.service-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.services div.container div.row div div.service-card div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.services div.container div.row div div.service-card div.card-body p.card-text {
+    color: var(--text-color);
+}

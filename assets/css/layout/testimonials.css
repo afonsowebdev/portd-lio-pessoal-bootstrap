@@ -69,3 +69,24 @@ section.testimonials {
         }
     }
 }
+/* Dark Mode Styles */
+.dark-mode section.testimonials {
+    background-color: var(--bg-color);
+}
+
+.dark-mode section.testimonials div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.testimonials div.container div.row div div.testimonial-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.testimonials div.container div.row div div.testimonial-card div.card-body p.card-text {
+    color: var(--text-color);
+}
+
+.dark-mode section.testimonials div.container div.row div div.testimonial-card div.card-body h5.card-title {
+    color: var(--text-color);
+}

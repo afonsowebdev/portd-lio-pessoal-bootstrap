@@ -73,3 +73,20 @@ section.certificates {
         }
     }
 }
+/* Dark Mode Styles */
+.dark-mode section.certificates div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.certificates div.container div.row div div.certificate-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.certificates div.container div.row div div.certificate-card div.card-body h5.card-title {
+    color: var(--text-color);
+}
+
+.dark-mode section.certificates div.container div.row div div.certificate-card div.card-body p.card-text {
+    color: var(--text-color);
+}

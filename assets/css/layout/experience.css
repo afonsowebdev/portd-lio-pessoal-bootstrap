@@ -51,3 +51,21 @@ section.experience {
         }
     }
 }
+
+/* Dark Mode Styles */
+.dark-mode section.experience div.container div.row div.col-12 h2 {
+    color: var(--text-color);
+}
+
+.dark-mode section.experience div.container div.row div div.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode section.experience div.container div.row div div.card div.card-body h5.fw-semibold {
+    color: var(--primary-color);
+}
+
+.dark-mode section.experience div.container div.row div div.card div.card-body p {
+    color: var(--text-color);
+}
