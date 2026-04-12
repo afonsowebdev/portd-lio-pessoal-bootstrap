@@ -59,8 +59,8 @@ section.hero {
               color: white;
 
               &:hover {
-                background-color: darken(#E67E23, 10%);
-                border-color: darken(#E67E23, 10%);
+                background-color: darken(#e67e23, 10%);
+                border-color: darken(#e67e23, 10%);
                 transform: translateY(-2px);
               }
             }
@@ -83,7 +83,7 @@ section.hero {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         img {
           max-width: 100%;
           height: auto;
@@ -94,25 +94,25 @@ section.hero {
       }
     }
   }
-
-
 }
 
 /* Dark Mode Styles */
-.dark-mode section.hero .hero-text .span__hero-description {
-  color: var(--text-color);
-}
+.dark-mode section.hero {
+  div.col-md-7 {
+    div.hero-text {
+      p.span__hero-description,
+      h1.hero__title,
+      p.hero__description {
+        color: var(--text-color);
+      }
+    }
 
-.dark-mode section.hero .hero-text .hero__title {
-  color: var(--text-color);
-}
-
-.dark-mode section.hero .hero-text .hero__description {
-  color: var(--text-color);
-}
-
-.dark-mode section.hero .hero-image img {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    div.hero-image {
+      img {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
