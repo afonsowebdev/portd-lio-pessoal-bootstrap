@@ -76,6 +76,17 @@ section.projects {
                 }
             }
         }
+
+        div.btn-github {
+            a.btn_github {
+                text-decoration: none;
+                padding: 8px;
+                background-color: var(--primary-color);
+                color: var(--white-color);
+                border-radius: 8px;
+                
+            }
+        }
     }
 }
 
