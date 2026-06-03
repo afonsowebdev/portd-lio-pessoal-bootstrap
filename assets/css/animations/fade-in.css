@@ -1,0 +1,258 @@
+/* =============== Fade-In Animations =============== */
+
+/* Entrada suave - Fade in com opacidade */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Entrada suave com deslocamento para cima */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Entrada suave com deslocamento para baixo */
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Entrada suave com deslocamento para esquerda */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Entrada suave com deslocamento para direita */
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Entrada suave com scale */
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Classes de utilidade para aplicar animações */
+.fade-in {
+  animation: fade-in 600ms var(--ease-out) forwards;
+}
+
+.fade-in-up {
+  animation: fade-in-up 700ms var(--ease-out) forwards;
+}
+
+.fade-in-down {
+  animation: fade-in-down 700ms var(--ease-out) forwards;
+}
+
+.fade-in-left {
+  animation: fade-in-left 700ms var(--ease-out) forwards;
+}
+
+.fade-in-right {
+  animation: fade-in-right 700ms var(--ease-out) forwards;
+}
+
+.fade-in-scale {
+  animation: fade-in-scale 600ms var(--ease-out) forwards;
+}
+
+/* Delays para efeito em cascata */
+.fade-in-delay-1 { animation-delay: 100ms; }
+.fade-in-delay-2 { animation-delay: 200ms; }
+.fade-in-delay-3 { animation-delay: 300ms; }
+.fade-in-delay-4 { animation-delay: 400ms; }
+.fade-in-delay-5 { animation-delay: 500ms; }
+.fade-in-delay-6 { animation-delay: 600ms; }
+
+/* =============== Global Fade-In para seções =============== */
+
+/* Hero section */
+.hero-text {
+  animation: fade-in-left 800ms var(--ease-out);
+}
+
+.hero-image {
+  animation: fade-in-right 800ms var(--ease-out);
+}
+
+.hero-availability {
+  animation: fade-in-down 600ms var(--ease-out) 200ms both;
+}
+
+.hero__title {
+  animation: fade-in-up 700ms var(--ease-out) 300ms both;
+}
+
+.hero__description {
+  animation: fade-in-up 700ms var(--ease-out) 400ms both;
+}
+
+.hero__buttons {
+  animation: fade-in-up 700ms var(--ease-out) 500ms both;
+}
+
+.hero-stats {
+  animation: fade-in-up 700ms var(--ease-out) 600ms both;
+}
+
+/* About section */
+.about-text {
+  animation: fade-in-left 800ms var(--ease-out);
+}
+
+.about-image {
+  animation: fade-in-right 800ms var(--ease-out);
+}
+
+.about-tag {
+  animation: fade-in-down 600ms var(--ease-out) 100ms both;
+}
+
+.about__title {
+  animation: fade-in-up 700ms var(--ease-out) 200ms both;
+}
+
+.about__description {
+  animation: fade-in-up 700ms var(--ease-out) 300ms both;
+}
+
+.about__buttons {
+  animation: fade-in-up 700ms var(--ease-out) 400ms both;
+}
+
+.about-stats {
+  animation: fade-in-scale 700ms var(--ease-out) 500ms both;
+}
+
+/* Projects section */
+.projects-header {
+  animation: fade-in-up 700ms var(--ease-out);
+}
+
+.projects-filter {
+  animation: fade-in-up 700ms var(--ease-out) 200ms both;
+}
+
+.project-card {
+  animation: fade-in-scale 700ms var(--ease-out) forwards;
+}
+
+/* Services section */
+.services-header {
+  animation: fade-in-up 700ms var(--ease-out);
+}
+
+.service-card {
+  animation: fade-in-scale 700ms var(--ease-out) forwards;
+}
+
+/* Skills section */
+.skills-header {
+  animation: fade-in-up 700ms var(--ease-out);
+}
+
+.skill-category {
+  animation: fade-in-scale 700ms var(--ease-out) forwards;
+}
+
+/* Contact section */
+.contact-header {
+  animation: fade-in-up 700ms var(--ease-out);
+}
+
+.contact-content {
+  animation: fade-in-scale 700ms var(--ease-out) forwards;
+}
+
+/* Footer */
+footer {
+  animation: fade-in 700ms var(--ease-out) forwards;
+}
+
+/* Navigation */
+.site-nav {
+  animation: fade-in-down 600ms var(--ease-out);
+}
+
+/* Floating actions */
+.floating-github,
+.floating-whatsapp {
+  animation: fade-in-scale 800ms var(--ease-out) 300ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .fade-in-up,
+  .fade-in-down,
+  .fade-in-left,
+  .fade-in-right,
+  .fade-in-scale,
+  .hero-text,
+  .hero-image,
+  .hero-availability,
+  .hero__title,
+  .hero__description,
+  .hero__buttons,
+  .hero-stats,
+  .about-text,
+  .about-image,
+  .about-tag,
+  .about__title,
+  .about__description,
+  .about__buttons,
+  .about-stats,
+  .projects-header,
+  .projects-filter,
+  .project-card,
+  .services-header,
+  .service-card,
+  .skills-header,
+  .skill-category,
+  .contact-header,
+  .contact-content,
+  footer,
+  .site-nav,
+  .floating-github,
+  .floating-whatsapp {
+    animation: none !important;
+  }
+}

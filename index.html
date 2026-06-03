@@ -28,87 +28,87 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- Título da página -->
-    <title>Francisco Afonso | Portfólio Profissional</title>
+    <title>Portfólio - Francisco Afonso</title>
 </head>
 
 <body>
     <!-- Conteúdo da página -->
     <header>
-        <nav class="navbar fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    Portfólio.pt <span class="navbar-span">Francisco Afonso</span>
-                </a>
-                <div class="group-right d-flex align-items-center gap-3 ">
-                    <div class="social-links d-flex align-items-center gap-1">
-                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank"
-                            class="social-link linkedin"><i class='bx bxl-linkedin '></i></a>
-                        <a href="https://github.com/afonsowebdev" target="_blank" class="social-link github"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="#" class="social-link instagram"><i class='bx bxl-instagram'></i></a>
+        <nav class="site-nav">
+            <div class="nav-inner">
+                <div class="nav-left">
+                    <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas"
+                        aria-controls="mobileOffcanvas" aria-label="Abrir menu">
+                        <span class="hamburger-box">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </span>
+                    </button>
 
-                        <button class="btn btn-dark-mode">
-                            <i class='bx bx-moon dark-mode'></i>
-                        </button>
-                    </div>
+                    <button class="btn btn-dark-mode theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">
+                        <i class='bx bx-moon dark-mode'></i>
+                    </button>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="btn btn-outline-secondary btn-lang-toggle" type="button" data-lang-toggle aria-label="Mudar idioma para inglês">
+                        EN
                     </button>
                 </div>
 
+                <a class="brand" href="#hero">
+                    <span class="brand-mark">FA</span>
+                    <span class="brand-name">
+                        <strong>Francisco Afonso</strong>
+                        <small data-i18n="hero.eyebrow">Desenvolvedor Web</small>
+                    </span>
+                </a>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portfólio Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="nav-right">
+                    <div class="nav-socials">
+                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" class="icon-btn"
+                            aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/afonsowebdev" target="_blank" class="icon-btn" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" class="icon-btn" aria-label="Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#hero">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Sobre</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Projetos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#projects">Todos</a></li>
-                                    <li><a class="dropdown-item" href="#portfolios">Portfólios</a></li>
-                                    <li><a class="dropdown-item" href="#e-commerces">E-commerces</a></li>
-                                    <li><a class="dropdown-item" href="#web-apps">Web Apps</a></li>
-                                    <li><a class="dropdown-item" href="#landing-pages">Landing Pages</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experience">Experiência profissional</a>
-                            </li>
+                    <a class="btn btn-primary btn-contact" href="#contact">
+                        <i class='bx bx-phone'></i></a>
+                </div>
+            </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Serviços</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Habilidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#testimonials">Testemunhos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#certificates">Certificados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contato</a>
-                            </li>
-                        </ul>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileOffcanvas"
+                aria-labelledby="mobileOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="mobileOffcanvasLabel" data-i18n="nav.menu.title">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Fechar">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav-list">
+                        <li><a href="#hero" class="nav-link" data-i18n="nav.home">Início</a></li>
+                        <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+                        <li><a href="#services" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
+                        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+                    </ul>
+                    <div class="nav-section mt-3">
+                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" class="icon-btn"
+                            aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/afonsowebdev" target="_blank" class="icon-btn" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary btn-contact"><i class='bx bx-phone'></i></a>
                     </div>
                 </div>
             </div>
@@ -122,30 +122,32 @@
                 <div class="row align-items-center mt-4">
                     <div class="col-md-7 hero-text mb-4 mb-md-4 mt-md-5">
                         <div class="hero-text">
-                            <p class="span__hero-description mb-2">
-                                Desenvolvedor Web <span class="highlight">Full-Stack</span> & <span
-                                    class="highlight">UI/UX</span>
+                            <p class="span__hero-description mb-2" data-i18n="hero.eyebrow">
+                                Desenvolvedor Web <span class="highlight">Full-Stack</span> e especialista em <span
+                                    class="highlight">experiências digitais</span>
                             </p>
 
                             <h1 class="hero__title">
                                 Francisco <span class="title__span">Afonso</span>
                             </h1>
 
-                            <p class="hero__description text-justify">
-                                Focado na criação de interfaces eficientes e responsivas, aplicando as melhores práticas
-                                de desenvolvimento para proporcionar experiências intuitivas e de alto desempenho.
+                            <p class="hero__description text-justify" data-i18n="hero.description">
+                                Entrego websites profissionais com foco em usabilidade, performance e identidade visual.
+                                Estruturo soluções digitais claras, eficientes e alinhadas às necessidades de negócios.
                             </p>
 
                             <div class="hero__buttons mb-5">
-                                <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                                <a href="#projects" class="btn btn-outline-primary">Veja Meus Projetos</a>
+                                <a href="#contact" class="btn btn-primary"><i class='bx bx-chat'></i></a>
+                                <a href="#projects" class="btn btn-outline-primary"><i class='bx bx-briefcase'></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-5 hero-image text-center">
-                        <img src="assets/img/foto-perfil/foto-perfil.png" alt="Imagem de Francisco Afonso"
-                            class="img-fluid">
+                        <div class="hero-portrait">
+                            <img src="assets/img/foto-perfil/foto-perfil.png" alt="Imagem de Francisco Afonso"
+                                class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,53 +156,44 @@
 
         <section class="about" id="about">
             <div class="container">
-                <div class="row align-items-center mt-5">
-
-                    <!-- Título -->
-                    <div class="col-12 text-center mb-4">
-                        <h2 class="about__title">
-                            Sobre <span class="subtitle__span">Mim</span>
-                        </h2>
-                        <hr class="underline about-underline">
+                <div class="about-grid">
+                    <div class="about-image-wrap">
+                        <img src="./assets/img/sobre-img/about__image.jpg" alt="Foto de Francisco Afonso">
+                        <span class="about-tag"><i class='bx bx-briefcase'></i> Desenvolvimento Web</span>
                     </div>
 
-                    <!-- Imagem -->
-                    <div class="col-md-4  about-image mb-4 mb-md-0">
-                        <img src="./assets/img/sobre-img/about__image.jpg" alt="Imagem Sobre Mim" class="img-fluid">
-                    </div>
+                    <div class="about-content">
+                        <div>
+                            <h2 class="about__title">
+                                <span data-i18n="about.title.first">Sobre</span> <span class="subtitle__span" data-i18n="about.title.last">Mim</span>
+                            </h2>
+                            <hr class="underline about-underline">
+                        </div>
 
-                    <!-- Texto -->
-                    <div class="col-md-8 about-text">
-                        <p class="about__description mb-3 text-justify">
-                            Sou Desenvolvedor <span class="highlight">Full-Stack</span>, com foco no desenvolvimento
-                            de soluções digitais completas desde o <span class="highlight">front-end</span> até ao
-                            <span class="highlight">back-end</span>. Tenho experiência na criação de landing pages,
-                            sites institucionais e e-commerces, aliando design funcional, código limpo e princípios
-                            de
-                            <span class="highlight">UX/UI</span>.
-                        </p>
+                        <p class="about__description" data-i18n="about.p1.before">
 
-                        <p class="about__description mb-3 text-justify">
-                            Atualmente, aprofundo conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>,
-                            <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>,
-                            <strong>TypeScript</strong>, <strong>PHP</strong>, <strong>Bootstrap</strong>,
-                            <strong>MongoDB</strong> e <strong>MySQL</strong>, além de Git/GitHub e APIs.
-                        </p>
-
-                        <p class="about__description mb-3 text-justify">
-                            Sou uma pessoa analítica, criativa e orientada a resultados, com facilidade de trabalho
-                            em equipa e aprendizagem contínua.
-                        </p>
-
-                        <p class="about__description mb-3 text-justify">
-                            Procuro integrar projetos inovadores onde possa contribuir e crescer na área de
-                            <span class="geral-span">desenvolvimento web</span>.
-                        </p>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="num">+7</span>
+                                <span class="label">Projetos em destaque</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="num">3</span>
+                                <span class="label">Setores atendidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="num">100%</span>
+                                <span class="label">Foco em usabilidade</span>
+                            </div>
+                        </div>
 
                         <div class="about__buttons">
-                            <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                            <a href="#" class="btn btn-outline-primary" id="btnDownload" download="">Baixar
-                                Curriculo</a>
+                            <a href="#contact" class="btn btn-primary" aria-label="Entrar em contato" title="Entrar em contato">
+                                <i class='bx bx-chat'></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary" id="btnDownload" download="" aria-label="Baixar currículo" title="Baixar currículo">
+                                <i class='bx bx-download'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -213,104 +206,66 @@
 
                     <div class="col-12 text-center mb-3">
                         <h2 class="about__title">
-                            Meus <span class="subtitle__span">Projetos</span>
+                            <span data-i18n="projects.title.first">Meus</span> <span class="subtitle__span" data-i18n="projects.title.last">Projetos</span>
                         </h2>
                         <hr class="underline about-underline my-3">
-                        <p class="text-center mb-3">
+                        <p class="text-center mb-3" data-i18n="projects.subtitle">
                             Projetos desenvolvidos com foco em qualidade técnica e experiência do utilizador.
                         </p>
                     </div>
 
-                    <!-- CARD 1 -->
-                    <!-- <div class="col-md-4 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/portfólio-francisco.png" class="card-img-top">
-
-                            <div class="card-body">
-                                <h5 class="card-title">Portfólio <span class="geral-span">Pessoal</span></h5>
-                                <p class="card-text"> 
-                                    Portfólio pessoal desenvolvido para destacar competências técnicas, projetos e
-                                    identidade profissional.
-                                </p>
-
-                                <button class="btn open-modal" data-title="Portfílio Pessoal"
-                                    data-description="Portfólio pessoal criado para apresentar projetos, competências e experiência de forma clara e objetiva. O foco principal foi usabilidade, responsividade e uma comunicação visual moderna."
-                                    data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
-                                    data-link="https://portfoliofrancisc.netlify.app/">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div> -->
 
                     <!-- CARD 2 -->
                     <div class="col-md-4 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/aurora-palace-hotel.png" class="card-img-top">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/aurora-palace-hotel.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="Aurora Palace Hotel" data-description="Website institucional premium para um hotel boutique, desenhado para transmitir sofisticação, confiança e hospedagem de alto padrão. A interface prioriza usabilidade, conteúdo visual elegante e performance ideal em desktop e mobile." data-tech="HTML5, CSS3, Bootstrap 5, JavaScript" data-link="https://aurorapalace.netlify.app/#">
 
                             <div class="card-body">
-                                <h5 class="card-title">Aurora <span class="geral-span">Palace Hotel</span></h5>
-                                <p class="card-text"> <!-- text-muted -->
-                                    Website institucional desenvolvido para um hotel de luxo, com foco em UX, identidade
-                                    visual sofisticada e performance.
-                                </p>
-
-                                <button class="btn open-modal" data-title="Aurora Palace Hotel" data-description="
-                                    Projeto criado para o setor hoteleiro, com o objetivo de transmitir sofisticação, conforto e confiança. O site foi desenvolvido com foco em experiência do utilizador, design responsivo e organização clara das informações.
-                                    " data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
-                                    data-link="https://aurorapalace.netlify.app/#">
-                                    Ver detalhes
-                                </button>
+                                <div class="project-card-header">
+                                    <h5 class="card-title">AURORA <span class="geral-span">PALACE</span></h5>
+                                    <div class="project-badges mt-2">
+                                        <a class="project-badge live" href="https://aurorapalace.netlify.app/#" target="_blank">Ao vivo</a>
+                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- CARD 3 -->
                     <div class="col-md-4 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/jbl.png" class="card-img-top">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/jbl.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="JBL Auditive" data-description="Landing page de produto projetada para a JBL, com foco em apresentar recursos de áudio, demonstrar diferenciais e gerar interesse. A experiência prioriza velocidade, clareza visual e chamadas à ação objetivas." data-tech="HTML5, CSS3, JavaScript" data-link="https://jblauditive.netlify.app/">
 
                             <div class="card-body">
-                                <h5 class="card-title">J <span class="geral-span">B</span> L</h5>
-                                <p class="card-text "> <!-- text-muted -->
-                                    Landing page desenvolvida para apresentar produtos de áudio JBL com foco em
-                                    experiência sonora envolvente, design responsivo e usabilidade otimizada.
-                                </p>
-
-                                <button class="btn open-modal" data-title="Portfílio Pessoal"
-                                    data-description="Projeto de front-end responsivo para a promoção de produtos JBL, com layout mobile-first, componentes interativos, navegação acessível e destaque visual de recursos chave dos modelos de áudio."
-                                    data-tech="HTML5, CSS3, JavaScript" data-link="https://jblauditive.netlify.app/">
-                                    Ver detalhes
-                                </button>
+                                <div class="project-card-header">
+                                    <h5 class="card-title">JBL <span class="geral-span">AUDITIVE</span></h5>
+                                    <div class="project-badges mt-2">
+                                        <a class="project-badge live" href="https://jblauditive.netlify.app/" target="_blank">Ao vivo</a>
+                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 col-lg-4">
-                        <div class="card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/sofitnessgym.png" class="card-img-top">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="./assets/img/projetos-img/sofitnessgym.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="SOFITNESS" data-description="Landing page de serviços fitness desenvolvida para destacar treinos, planos e infraestrutura. O layout foca em conversão, clareza de informações e navegação fluida para públicos mobile e desktop." data-tech="HTML5, CSS3, JavaScript" data-link="https://sofitnessgym.netlify.app/">
 
                             <div class="card-body">
-                                <h5 class="card-title">SOFITNESS</h5>
-                                <p class="card-text "> <!-- text-muted -->
-                                    Landing page desenvolvida para apresentar serviços de academia, com foco em
-                                    design responsivo e usabilidade otimizada.
-                                </p>
-
-                                <button class="btn open-modal" data-title="Portfílio Pessoal"
-                                    data-description="Projeto de front-end responsivo para a promoção de serviços de academia, com layout mobile-first, componentes interativos, navegação acessível e destaque visual de recursos chave dos modelos de áudio."
-                                    data-tech="HTML5, CSS3, JavaScript" data-link="https://sofitnessgym.netlify.app/">
-                                    Ver detalhes
-                                </button>
+                                <div class="project-card-header">
+                                    <h5 class="card-title">SOFIT<span class="geral-span">NESS</span></h5>
+                                    <div class="project-badges mt-2">
+                                        <a class="project-badge live" href="https://sofitnessgym.netlify.app/" target="_blank">Ao vivo</a>
+                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="btn-github mt-5 text-center">
-                    <a href="https://github.com/afonsowebdev?tab=repositories" target="_blank" class="btn_github">Ver
-                        mais no GitHub</a>
-                </div>
             </div>
         </section>
 
@@ -343,145 +298,55 @@
             </div>
         </div>
 
-        <section class="experience" id="experience">
-            <div class="container-lg">
-
-                <!-- Título -->
-                <div class="col-12 text-center mb-4">
-                    <h2 class="about__title">
-                        Minhas <span class="subtitle__span">Experiências</span>
-                    </h2>
-                    <hr class="underline about-underline">
-                    <p class="text-muted">
-                        Projetos desenvolvidos com foco em qualidade, organização e experiência do utilizador.
-                    </p>
-                </div>
-
-                <div class="row g-4">
-
-                    <!-- CARD 1 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-
-                                <h5 class="fw-semibold">Aurora Palace Hotel</h5>
-                                <span class="badge bg-secondary mb-3">Projeto Institucional</span>
-
-                                <p class="text-muted small">
-                                    Desenvolvimento de website para o setor hoteleiro com foco em design
-                                    sofisticado, organização clara das informações e experiência responsiva.
-                                </p>
-
-                                <ul class="small ps-3">
-                                    <li>HTML5 semântico</li>
-                                    <li>Bootstrap 5</li>
-                                    <li>JavaScript (DOM)</li>
-                                    <li>Layout mobile-first</li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-
-                                <h5 class="fw-semibold">JBL Auditive</h5>
-                                <span class="badge bg-secondary mb-3">Landing Page</span>
-
-                                <p class="text-muted small">
-                                    Criação de landing page promocional para apresentação de produtos de áudio, com
-                                    foco em impacto visual e clareza de navegação.
-                                </p>
-
-                                <ul class="small ps-3">
-                                    <li>Design responsivo</li>
-                                    <li>Componentização Bootstrap</li>
-                                    <li>Hierarquia visual estratégica</li>
-                                    <li>Estrutura organizada</li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 3 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-
-                                <h5 class="fw-semibold">Portfólio Pessoal</h5>
-                                <span class="badge bg-secondary mb-3">Projeto Principal</span>
-
-                                <p class="text-muted small">
-                                    Desenvolvimento do meu portfólio profissional com foco em organização modular,
-                                    design moderno e apresentação estratégica dos projetos.
-                                </p>
-
-                                <ul class="small ps-3">
-                                    <li>Estrutura modular com ES Modules</li>
-                                    <li>Implementação de modal dinâmico</li>
-                                    <li>Design responsivo (mobile-first)</li>
-                                    <li>Organização escalável de código</li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        
 
         <section class="services" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-2">
                         <h2 class="services__title">
-                            Meus <span class="subtitle__span">Serviços</span>
+                            <span data-i18n="services.title.first">Meus</span> <span class="subtitle__span" data-i18n="services.title.last">Serviços</span>
                         </h2>
                         <hr class="underline services-underline">
-                        <p class="text-center mb-3">Descubra os serviços que ofereço como desenvolvedor web
+                        <p class="text-center mb-3" data-i18n="services.subtitle">Descubra os serviços que ofereço como desenvolvedor web
                             full-stack.</p>
                     </div>
 
                     <div class="services-cards d-flex justify-content-center align-items-center gap-4">
 
                         <!-- Serviço 1 -->
-                        <div class="card service-card col-md-4 col-lg-3" style="width: 18rem;">
+                        <div class="card service-card col-md-4 col-lg-3">
                             <div class="card-body">
                                 <span class="service-icon-span mb-3 d-flex justify-content-center align-items-center">
                                     <i class='bx bx-code-alt'></i>
                                 </span>
-                                <h5 class="card-title fw-semibold">Desenvolvimento Front-End</h5>
-                                <p class="card-text small">Criação de interfaces responsivas e atraentes utilizando
+                                <h5 class="card-title fw-semibold" data-i18n="services.frontend.title">Desenvolvimento Front-End</h5>
+                                <p class="card-text small" data-i18n="services.frontend.desc">Criação de interfaces responsivas e atraentes utilizando
                                     HTML,
                                     CSS e JavaScript.</p>
 
                             </div>
                         </div>
                         <!-- Serviço 2 -->
-                        <div class="card service-card col-md-4 col-lg-3" style="width: 18rem;">
+                        <div class="card service-card col-md-4 col-lg-3">
                             <div class="card-body">
                                 <span class="service-icon-span mb-3 d-flex justify-content-center align-items-center">
                                     <i class='bx bxs-server service-icon'></i>
                                 </span>
-                                <h5 class="card-title fw-semibold">Desenvolvimento Back-End</h5>
-                                <p class="card-text small">Implementação de servidores, bancos de dados e APIs com
+                                <h5 class="card-title fw-semibold" data-i18n="services.backend.title">Desenvolvimento Back-End</h5>
+                                <p class="card-text small" data-i18n="services.backend.desc">Implementação de servidores, bancos de dados e APIs com
                                     Node.js
                                     e PHP.</p>
                             </div>
                         </div>
                         <!-- Serviço 3 -->
-                        <div class="card service-card col-md-4 col-lg-3" style="width: 18rem;">
+                        <div class="card service-card col-md-4 col-lg-3">
                             <div class="card-body">
                                 <span class="service-icon-span mb-3  d-flex justify-content-center align-items-center">
                                     <i class='bx bxs-palette service-icon'></i>
                                 </span>
-                                <h5 class="card-title fw-semibold">Design UI/UX</h5>
-                                <p class="card-text small">Criação de designs intuitivos focados na experiência do
+                                <h5 class="card-title fw-semibold" data-i18n="services.uiux.title">Design UI/UX</h5>
+                                <p class="card-text small" data-i18n="services.uiux.desc">Criação de designs intuitivos focados na experiência do
                                     usuário.</p>
                             </div>
                         </div>
@@ -494,16 +359,16 @@
                 <div class="row">
                     <div class="col-12 text-center mb-4">
                         <h2 class="skills__title">
-                            Minhas <span class="subtitle__span">Habilidades</span>
+                            <span data-i18n="skills.title.first">Minhas</span> <span class="subtitle__span" data-i18n="skills.title.last">Habilidades</span>
                         </h2>
                         <hr class="underline skills-underline">
-                        <p class="text-center mb-3">Aqui estão algumas das minhas principais habilidades técnicas.
+                        <p class="text-center mb-3" data-i18n="skills.subtitle">Aqui estão algumas das minhas principais habilidades técnicas.
                         </p>
                     </div>
 
                     <div class="skills d-flex justify-content-space-between gap-4">
                         <div class="col-md-6 text-center">
-                            <h2 class="skills-subtitle">Front-<span class="">End</span></h2>
+                            <h2 class="skills-subtitle" data-i18n-html="skills.frontend.title.first">Front-<span class="">End</span></h2>
                             <hr class="underline skills-underline mb-4">
 
 
@@ -535,7 +400,7 @@
                         </div>
 
                         <div class="col-md-6 text-center">
-                            <h2 class="skills-subtitle">Back-<span class="">End</span></h2>
+                            <h2 class="skills-subtitle" data-i18n-html="skills.backend.title.first">Back-<span class="">End</span></h2>
                             <hr class="underline skills-underline mb-4">
 
                             <div class="backend">
@@ -563,246 +428,7 @@
             </div>
         </section>
 
-        <section class="testimonials" id="testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mb-4">
-                        <h2 class="testemunials__title">
-                            Recomendações <span class="subtitle__span">Académicas</span>
-                        </h2>
-                        <hr class="underline testemunials-underline">
-                        <p class="text-center mb-3">O que professores e colegas destacam sobre minha forma de trabalhar
-                        </p>
-                    </div>
-
-                    <div class="testemunials-cards d-flex justify-content-center flex-wrap gap-4">
-
-                        <!-- Testemunho 1 -->
-                        <div class="card mb-3" style="max-width: 600px;">
-                            <div class="row g-0 d-flex align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/assets/img/testemunhos-img/foto-perfil-01.jpg"
-                                        class="img-fluid rounded-start" alt="Foto do Professor Lucas Ramiro">
-                                </div>
-
-                                <div class="col-md-8">
-
-                                    <div class="card-body">
-
-                                        <h5 class="card-title">Lucas Ramiro</h5>
-
-                                        <ul class="list mb-2">
-                                            <li class="mb-1">
-                                                <span class="span-profission">Design de Interfaces (UI/UX)</span>
-                                            </li>
-                                            <li class="mb-1">
-                                                <span class="card-subtitle mb-3 text-muted">Orientador Acadêmico</span>
-                                            </li>
-                                        </ul>
-
-                                        <p class="card-text small text-justify">
-                                            Conheço o Francisco Afonso desde o início do seu percurso académico, e posso
-                                            afirmar com confiança que ele é um dos estudantes mais dedicados e
-                                            talentosos que já tive o privilégio de orientar.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testemunho 2 -->
-                        <div class="card mb-3" style="max-width: 600px;">
-                            <div class="row g-0 d-flex align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/assets/img/testemunhos-img/foto-perfil-02.jpg"
-                                        class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tiago Ribeiro</h5>
-
-                                        <ul class="list mb-2">
-                                            <li class="mb-1">
-                                                <span class="span-profission">Programação Web</span>
-                                            </li>
-                                            <li class="mb-1">
-                                                <span class="card-subtitle mb-3 text-muted">Professor
-                                                    Universitário</span>
-                                            </li>
-                                        </ul>
-                                        <p class="card-text small">
-                                            Acompanhei o desenvolvimento acadêmico do Francisco
-                                            Afonso ao longo de dois semestres, e sempre me impressionou sua capacidade
-                                            de transformar conceitos complexos em soluções práticas e bem estruturadas.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testemunho 3 -->
-                        <div class="card mb-3" style="max-width: 600px;">
-                            <div class="row g-0 d-flex align-items-center">
-                                <div class="col-md-4">
-                                    <img src="/assets/img/testemunhos-img/foto-perfil-03.jpg"
-                                        class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Martins de Jesus </h5>
-                                        <ul class="list mb-2">
-                                            <li class="mb-1">
-                                                <span class="span-profission">Desenvolvimento Web</span>
-                                            </li>
-                                            <li class="mb-1">
-                                                <span class="card-subtitle mb-3 text-muted">Colega de projeto</span>
-                                            </li>
-                                        </ul>
-                                        <p class="card-text small">Trabalhar com o Francisco Afonso no nosso projeto
-                                            independente foi uma das experiências mais produtivas que já tive. Ele
-                                            tem uma forma muito fluida de colaborar: sabe ouvir, sabe propor e sabe
-                                            ajustar o rumo quando necessário</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testemunho 4 -->
-                        <!--  <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/testemunhos-img/foto-perfil-04.jpg" class="img-fluid rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Barbara Raquel <span class="span-profission">Marketing
-                                                Digital</span></h5>
-                                        <span class="card-subtitle mb-2 text-muted">Colega de projeto</span>
-                                        <p class="card-text">Tive o prazer de trabalhar com o Francisco Afonso em um
-                                            projeto de desenvolvimento web, onde ele foi responsável pela criação do
-                                            front-end. Sua atenção aos detalhes e dedicação para garantir que a
-                                            interface fosse intuitiva e atraente foram notáveis.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Testemunho 5 -->
-                        <!-- <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/testemunhos-img/foto-perfil-05.jpg" class="img-fluid rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lukenia Monteiro <span class="span-profission">Ciência de
-                                                Dados</span></h5>
-                                        <span class="card-subtitle mb-2 text-muted">Colega de projeto</span>
-                                        <p class="card-text">Trabalhar com o Francisco Afonso no nosso projeto
-                                            independente foi uma das experiências mais produtivas que já tive. Ele
-                                            tem uma forma muito fluida de colaborar: sabe ouvir, sabe propor e sabe
-                                            ajustar o rumo quando necessário</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Testemunho 6 -->
-                        <!--  <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/testemunhos-img/foto-perfil-06.jpg" class="img-fluid rounded-start"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Jéssica Miranda <span class="span-profission">Produção
-                                                Audiovisual</span></h5>
-                                        <span class="card-subtitle mb-2 text-muted">Colaborador Criativo</span>
-                                        <p class="card-text">Nos projetos criativos que desenvolvemos lado a lado, o
-                                            Francisco Afonso sempre trouxe ideias que iam muito além do óbvio. O que
-                                            eu mais admiro é a habilidade de transformar inspiração em execução e
-                                            sempre com muito cuidado estético e atenção aos detalhes.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-        </section>
-
-        <section class="certificates" id="certificates">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mb-4">
-                        <h2 class="certificado__title">
-                            Formação <span class="subtitle__span">Complementar</span>
-                        </h2>
-                        <hr class="underline certificado-underline">
-                        <p class="text-center mb-3">Formação complementar focada no desenvolvimento web e boas práticas
-                            modernas</p>
-                    </div>
-
-                    <div class="certificado-cards d-flex justify-content-center flex-wrap gap-4">
-
-                        <!-- Certificado 1 -->
-                        <div class="card" style="width: 24rem;">
-                            <img src="/assets/img/certificado-img/certificado-modulo-1.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h6 class="fw-semibold">HTML5 e CSS3 – <span class="subtitle__span">Fundamentos</span>
-                                </h6>
-
-                                <p class="small text-muted mb-1">
-                                    Curso em Vídeo
-                                </p>
-
-                                <p class="small text-muted">
-                                    40h • Concluído em Fevereiro de 2024
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Certificado 2 -->
-                        <div class="card" style="width: 24rem;">
-                            <img src="/assets/img/certificado-img/certificado-modulo-2.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h6 class="fw-semibold">HTML5 e CSS3 – <span class="subtitle__span">Fundamentos</span>
-                                </h6>
-
-                                <p class="small text-muted mb-1">
-                                    Curso em Vídeo
-                                </p>
-
-                                <p class="small text-muted">
-                                    40h • Concluído em Fevereiro de 2024
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Certificado 3 -->
-                        <div class="card" style="width: 24rem;">
-                            <img src="/assets/img/certificado-img/certificado-jscript.png" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <h6 class="fw-semibold">JavaScript – <span class="subtitle__span">Fundamentos</span>
-                                </h6>
-
-                                <p class="small text-muted mb-1">
-                                    Curso em Vídeo
-                                </p>
-
-                                <p class="small text-muted">
-                                    40h • Concluído em Fevereiro de 2024
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
+        <!-- Certificates section removed to streamline the portfolio -->
 
         <section class="contact" id="contact">
             <div class="container">
@@ -810,10 +436,10 @@
 
                     <div class="col-12 text-center mb-4">
                         <h2 class="contact__title">
-                            Entre em <span class="subtitle__span">Contato</span>
+                            <span data-i18n="contact.title.first">Entre em</span> <span class="subtitle__span" data-i18n="contact.title.last">Contato</span>
                         </h2>
                         <hr class="underline contact-underline">
-                        <p class="text-center mb-3">
+                        <p class="text-center mb-3" data-i18n="contact.subtitle">
                             Para mais informações ou oportunidades, utilize o formulário abaixo para entrar em contacto.
                         </p>
                     </div>
@@ -904,33 +530,31 @@
                             </div>
 
                             <div class="col-md-6 contact-form mb-4">
-                                <form class="row g-3 needs-validation contact__form" novalidate>
-                                    <div class="col-md-6">
-                                        <label for="validationCustom01" class="form-label">Primeiro nome</label>
-                                        <input type="text" class="form-control" id="validationCustom01" required>
-
-                                        <div class="valid-feedback">
-                                            Campo preenchidos corretamente!
+                                <form class="needs-validation contact__form" novalidate>
+                                    <div class="form-row">
+                                        <div class="form-field">
+                                            <label for="validationCustom01" class="form-label">Primeiro nome</label>
+                                            <input type="text" class="form-control" id="validationCustom01" required>
+                                            <div class="valid-feedback">
+                                                Campo preenchidos corretamente!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Por favor, insira seu primeiro nome.
+                                            </div>
                                         </div>
-
-                                        <div class="invalid-feedback">
-                                            Por favor, insira um endereço de e-mail válido.
+                                        <div class="form-field">
+                                            <label for="validationCustom02" class="form-label">Último nome</label>
+                                            <input type="text" class="form-control" id="validationCustom02" required>
+                                            <div class="valid-feedback">
+                                                Campo preenchidos corretamente!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Por favor, insira seu sobrenome.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="validationCustom02" class="form-label">Último nome</label>
-                                        <input type="text" class="form-control" id="validationCustom02" required>
-                                        <div class="valid-feedback">
-                                            Campo preenchidos corretamente!
-                                        </div>
 
-                                        <div class="invalid-feedback">
-                                            Por favor, insira um endereço de e-mail válido.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-12">
+                                    <div class="form-field">
                                         <label for="validationCustom03" class="form-label">E-mail</label>
                                         <input type="email" class="form-control" id="validationCustom03" required>
                                         <div class="invalid-feedback">
@@ -938,17 +562,16 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12">
+                                    <div class="form-field">
                                         <label for="validationCustom04" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="validationCustom04" rows="4"
-                                            required></textarea>
+                                        <textarea class="form-control" id="validationCustom04" rows="4" required></textarea>
                                         <div class="invalid-feedback">
                                             Por favor, insira sua mensagem.
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary d-flex justify-content-center w-100 py-2"
-                                            type="submit">Enviar mensagem</button>
+
+                                    <div class="form-field">
+                                        <button class="btn btn-primary d-flex justify-content-center w-100 py-2" type="submit">Enviar mensagem</button>
                                     </div>
                                 </form>
                             </div>
@@ -968,6 +591,19 @@
             </div>
         </div>
     </footer>
+
+    <div class="floating-actions">
+        <button type="button" class="floating-scroll-top" aria-label="Voltar ao topo">
+            <i class='bx bx-chevron-up'></i>
+        </button>
+        <a href="https://wa.me/351916995148?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20saber%20mais%20sobre%20seu%20trabalho!"
+            class="floating-whatsapp" target="_blank" rel="noreferrer" aria-label="Contactar no WhatsApp">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+        <a href="https://github.com/afonsowebdev?tab=repositories" target="_blank" class="floating-github" aria-label="Ver mais projetos no GitHub" title="Ver mais projetos no GitHub">
+            <i class='bx bxl-github'></i>
+        </a>
+    </div>
 
     <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -1,122 +1,87 @@
-section.services {
-    background-color: var(--color-secondary);
-    padding: 6rem 0;
+.services { position: relative; }
 
-    div.container {
-
-        div.row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-
-            div.col-12 {
-                h2.services__title {
-                    font-family: var(--font-family-poppins);
-                    font-size: var(--font-size-poppins-large);
-                    font-weight: var(--font-weight-poppins);
-
-                    .subtitle__span {
-                        color: var(--primary-color);
-                        font-weight: 700;
-                    }
-                }
-
-                hr.services-underline {
-                    width: 80px;
-                    height: 4px;
-                    background-color: #E67E23;
-                    margin: 0 auto;
-                    border: none;
-                    border-radius: 2px;
-                }
-
-                p.text-center {
-                    color: var(--secondary-color);
-                    margin: 0 auto 20px;
-                }
-
-            }
-
-
-            div.services-cards {
-
-                div.service-card {
-                    background-color: #fff;
-                    padding: 1rem;
-                    border-radius: 8px;
-                    border: none;
-                    outline: hidden;
-                    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
-                    flex: 1 1 calc(33.333% - 2rem);
-                    transition: transform .3s ease, box-shadow .3s ease;
-
-                    &:hover {
-                        transform: translateY(-6px);
-                        box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
-                    }
-
-                    div.card-body{
-                        span.service-icon-span {
-                            width: 40px;
-                            height: 40px;
-                            
-                            border: 1px solid var(--primary-color);
-                            border-radius: 50%;
-                            
-
-                            font-size: 1rem;
-                            color: var(--primary-color);
-                        }
-
-                        h5.card-title {
-                            margin-top: 1rem;
-                            color: var(--primary-color);
-                        }
-                    }
-                }
-            }
-        }
-    }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    section.services {
-        div.container {
-            div.row {
-                div.services-cards {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    div.service-card {
-                        flex: 1 1 100%;
-                        max-width: 300px;
-                    }
-                }
-            }
-        }
-    }
+.services-cards {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Dark Mode Styles */
-.dark-mode section.services {
-    background-color: var(--bg-color);
+.service-card {
+  width: min(24rem, 100%);
+  flex: 0 0 auto;
+  min-width: 22rem;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  text-align: left;
+  overflow: hidden;
+  transition: all var(--duration-base) var(--ease-out);
+  isolation: isolate;
 }
 
-.dark-mode section.services div.container div.row div.col-12 h2 {
-    color: var(--text-color);
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--gradient-brand);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-out);
+  z-index: 1;
+  pointer-events: none;
 }
 
-.dark-mode section.services div.container div.row div div.service-card {
-    background-color: var(--card-bg);
-    border-color: var(--border-color);
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
-.dark-mode section.services div.container div.row div div.service-card div.card-body h5.card-title {
-    color: var(--text-color);
+.service-card:hover::before { opacity: 1; }
+
+.service-icon-span {
+  width: 56px;
+  height: 56px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(255,122,26,.12), rgba(255,61,139,.12));
+  color: var(--primary-color);
+  font-size: 1.65rem;
+  margin-bottom: 1.25rem;
+  transition: all var(--duration-base) var(--ease-out);
 }
 
-.dark-mode section.services div.container div.row div div.service-card div.card-body p.card-text {
-    color: var(--text-color);
+.service-card:hover .service-icon-span {
+  background: var(--gradient-brand);
+  color: #fff;
+  transform: scale(1.05) rotate(-3deg);
 }
+
+.service-card .card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  color: var(--text);
+  margin: 0 0 .55rem;
+}
+
+.service-card .card-text {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.service-card .card-body { padding: 0; }
