@@ -2,8 +2,8 @@
   position: relative;
   padding-top: calc(var(--nav-height) + 3rem);
   padding-bottom: 0;
-  height: 100vh;
-  min-height: 100vh;
+  height: 95vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   overflow: hidden;
