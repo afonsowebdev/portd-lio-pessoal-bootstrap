@@ -1,4 +1,5 @@
 .projects { position: relative; }
+.projects > .container-lg { position: relative; z-index: 1; }
 
 .projects-filter {
   display: flex;

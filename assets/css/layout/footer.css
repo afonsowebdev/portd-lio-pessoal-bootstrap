@@ -1,10 +1,91 @@
 .footer-container {
   position: relative;
+  overflow: hidden;
   padding: clamp(3rem, 6vw, 4.5rem) 0 2rem;
   background:
     linear-gradient(180deg, transparent, var(--bg-subtle));
   border-top: 1px solid var(--border);
   margin-top: clamp(2rem, 4vw, 4rem);
+}
+
+.footer-container > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Barra do footer: logo | © | ações ---- */
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Esquerda: logo */
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.footer-brand:hover {
+  transform: translateY(-2px);
+}
+
+.footer-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.footer-brand-text strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-md);
+  color: var(--text);
+}
+
+.footer-brand-text small {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+/* Centro: copyright */
+.footer-bar .footer-text {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Direita: redes sociais + voltar ao topo */
+.footer-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 720px) {
+  .footer-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  .footer-bar .footer-text {
+    order: 3;
+  }
 }
 
 .footer-grid {

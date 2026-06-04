@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Meta tags para SEO -->
-    <meta name="description" content="Portfílio profissional de Francisco Afonso, mostrando projetos e habilidades.">
+    <meta name="description" content="Portfílio profissional de Francisco Afonso, mostrando projetos e habilidades."
+        data-i18n="meta.description">
     <meta name="keywords" content="portfílio, projetos, habilidades, Francisco Afonso">
     <meta name="author" content="Francisco Afonso">
 
@@ -28,8 +29,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- Título da página -->
-    <title>Portfólio - Francisco Afonso</title>
-</head> 
+    <title data-i18n="meta.title">Portfólio - Francisco Afonso</title>
+</head>
 
 <body>
     <!-- Conteúdo da página -->
@@ -40,7 +41,7 @@
                 <!-- Mobile Menu -->
                 <div class="nav-left">
                     <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas"
-                        aria-controls="mobileOffcanvas" aria-label="Abrir menu">
+                        aria-controls="mobileOffcanvas" aria-expanded="false" aria-label="Abrir menu">
                         <span class="hamburger-box">
                             <span class="hamburger-line"></span>
                             <span class="hamburger-line"></span>
@@ -48,11 +49,13 @@
                         </span>
                     </button>
 
-                    <button class="btn btn-dark-mode theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema">
+                    <button class="btn btn-dark-mode theme-toggle" type="button" data-theme-toggle
+                        aria-label="Alternar tema">
                         <i class='bx bx-moon dark-mode'></i>
                     </button>
 
-                    <button class="btn btn-outline-secondary btn-lang-toggle" type="button" data-lang-toggle aria-label="Mudar idioma para inglês">
+                    <button class="btn btn-outline-secondary btn-lang-toggle" type="button" data-lang-toggle
+                        aria-label="Mudar idioma para inglês">
                         EN
                     </button>
                 </div>
@@ -73,10 +76,13 @@
                             aria-label="LinkedIn">
                             <i class='bx bxl-linkedin'></i>
                         </a>
+
                         <a href="https://github.com/afonsowebdev" target="_blank" class="icon-btn" aria-label="GitHub">
                             <i class='bx bxl-github'></i>
                         </a>
-                        <a href="#" class="icon-btn" aria-label="Instagram">
+
+                        <a href="https://www.instagram.com/afonso.developer?igsh=MWR6bncwb2Nudnhpbw%3D%3D&utm_source=qr"
+                            targe class="icon-btn" aria-label="Instagram">
                             <i class='bx bxl-instagram'></i>
                         </a>
                     </div>
@@ -86,43 +92,58 @@
                 </div>
             </div>
 
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileOffcanvas"
-                aria-labelledby="mobileOffcanvasLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="mobileOffcanvasLabel" data-i18n="nav.menu.title">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Fechar">
-                        <i class='bx bx-x'></i>
-                    </button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="nav-list">
-                        <li><a href="#hero" class="nav-link" data-i18n="nav.home">Início</a></li>
-                        <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
-                        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
-                        <li><a href="#services" class="nav-link" data-i18n="nav.services">Serviços</a></li>
-                        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
-                        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
-                    </ul>
-                    <div class="nav-section mt-3">
-                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" class="icon-btn"
-                            aria-label="LinkedIn">
-                            <i class='bx bxl-linkedin'></i>
-                        </a>
-                        <a href="https://github.com/afonsowebdev" target="_blank" class="icon-btn" aria-label="GitHub">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                        <a href="#contact" class="btn btn-primary btn-contact"><i class='bx bx-phone'></i></a>
-                    </div>
-                </div>
-            </div>
         </nav>
     </header>
+
+    <!-- Offcanvas Menu (fora do <header> para que o backdrop do Bootstrap não o cubra) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileOffcanvasLabel" data-i18n="nav.menu.title">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                data-i18n-attr="aria-label:projects.modal.close" aria-label="Fechar">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link" data-i18n="nav.home">Início</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+            <div class="nav-section mt-3">
+                <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" class="icon-btn"
+                    aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/afonsowebdev" target="_blank" class="icon-btn" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.instagram.com/afonso.developer?igsh=MWR6bncwb2Nudnhpbw%3D%3D&utm_source=qr"
+                    target="_blank" class="icon-btn" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero">
+            <div class="dots-layer" aria-hidden="true">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
             <div class="container">
                 <div class="row align-items-center mt-4">
                     <div class="col-md-7 hero-text mb-4 mb-md-4 mt-md-5">
@@ -142,8 +163,9 @@
                             </p>
 
                             <div class="hero__buttons mb-5">
-                                <a href="#contact" class="btn btn-primary"><i class='bx bx-chat'></i></a>
-                                <a href="#projects" class="btn btn-outline-primary"><i class='bx bx-briefcase'></i></a>
+                                <a href="#contact" class="btn btn-contact"><i class='bx bx-chat'></i> CONTACTAR</a>
+                                <a href="#projects" class="btn btn-outline-primary"><i class='bx bx-briefcase'></i> VER
+                                    PROJETOS</a>
                             </div>
                         </div>
                     </div>
@@ -169,16 +191,21 @@
 
                     <div class="about-content">
                         <div>
+                            <span class="skills__eyebrow" data-i18n="about.eyebrow">Sobre Mim</span>
                             <h2 class="about__title">
-                                <span data-i18n="about.title.first">Sobre</span> <span class="subtitle__span" data-i18n="about.title.last">Mim</span>
+                                <span data-i18n="about.title.first">Sobre</span> <span class="subtitle__span"
+                                    data-i18n="about.title.last">Mim</span>
                             </h2>
                             <hr class="underline about-underline">
                         </div>
 
                         <p class="about__description" data-i18n="about.p1.before">
-                            Desenvolvo experiência digitais com aparencia sofisticada, código organizado e usabilidade clara. Meu foco é criar soluções que funcionam tão bem quanto parecem, aplicando as melhores práticas modernas para entregar interfaces eficientes, responsivas e otimizadas para performance.
+                            Desenvolvo experiência digitais com aparencia sofisticada, código organizado e usabilidade
+                            clara. Meu foco é criar soluções que funcionam tão bem quanto parecem, aplicando as melhores
+                            práticas modernas para entregar interfaces eficientes, responsivas e otimizadas para
+                            performance.
                         </p>
-                        
+
 
                         <div class="about-stats">
                             <div class="stat-card">
@@ -196,10 +223,12 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a href="#contact" class="btn btn-primary" aria-label="Entrar em contato" title="Entrar em contato">
+                            <a href="#contact" class="btn btn-primary" aria-label="Entrar em contato"
+                                title="Entrar em contato">
                                 <i class='bx bx-chat'></i>
                             </a>
-                            <a href="#" class="btn btn-outline-primary" id="btnDownload" download="" aria-label="Baixar currículo" title="Baixar currículo">
+                            <a href="#" class="btn btn-outline-primary" id="btnDownload" download=""
+                                aria-label="Baixar currículo" title="Baixar currículo">
                                 <i class='bx bx-download'></i>
                             </a>
                         </div>
@@ -209,12 +238,21 @@
         </section>
 
         <section class="projects" id="projects">
+            <div class="dots-layer" aria-hidden="true">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
             <div class="container-lg">
                 <div class="row g-4">
 
                     <div class="col-12 text-center mb-3">
+                        <span class="skills__eyebrow" data-i18n="projects.eyebrow">Projetos</span>
                         <h2 class="about__title">
-                            <span data-i18n="projects.title.first">Meus</span> <span class="subtitle__span" data-i18n="projects.title.last">Projetos</span>
+                            <span data-i18n="projects.title.first">Meus</span> <span class="subtitle__span"
+                                data-i18n="projects.title.last">Projetos</span>
                         </h2>
                         <hr class="underline about-underline my-3">
                         <p class="text-center mb-3" data-i18n="projects.subtitle">
@@ -226,14 +264,21 @@
                     <!-- CARD 2 -->
                     <div class="col-md-4 col-lg-4">
                         <div class="card project-card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/aurora-palace-hotel.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="Aurora Palace Hotel" data-description="Website institucional premium para um hotel boutique, desenhado para transmitir sofisticação, confiança e hospedagem de alto padrão. A interface prioriza usabilidade, conteúdo visual elegante e performance ideal em desktop e mobile." data-tech="HTML5, CSS3, Bootstrap 5, JavaScript" data-link="https://aurorapalace.netlify.app/#">
+                            <img src="./assets/img/projetos-img/aurora-palace-hotel.png" class="card-img-top open-modal"
+                                title="Clique para ver detalhes do projeto" data-title="Aurora Palace Hotel"
+                                data-description="Website institucional premium para um hotel boutique, desenhado para transmitir sofisticação, confiança e hospedagem de alto padrão. A interface prioriza usabilidade, conteúdo visual elegante e performance ideal em desktop e mobile."
+                                data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
+                                data-link="https://aurorapalace.netlify.app/#">
 
                             <div class="card-body">
                                 <div class="project-card-header">
                                     <h5 class="card-title">AURORA <span class="geral-span">PALACE</span></h5>
                                     <div class="project-badges mt-2">
-                                        <a class="project-badge live" href="https://aurorapalace.netlify.app/#" target="_blank">Ao vivo</a>
-                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                        <a class="project-badge live" href="https://aurorapalace.netlify.app/#"
+                                            target="_blank">Ao vivo</a>
+                                        <a class="project-badge github"
+                                            href="https://github.com/afonsowebdev?tab=repositories"
+                                            target="_blank">GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -243,14 +288,20 @@
                     <!-- CARD 3 -->
                     <div class="col-md-4 col-lg-4">
                         <div class="card project-card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/jbl.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="JBL Auditive" data-description="Landing page de produto projetada para a JBL, com foco em apresentar recursos de áudio, demonstrar diferenciais e gerar interesse. A experiência prioriza velocidade, clareza visual e chamadas à ação objetivas." data-tech="HTML5, CSS3, JavaScript" data-link="https://jblauditive.netlify.app/">
+                            <img src="./assets/img/projetos-img/jbl.png" class="card-img-top open-modal"
+                                title="Clique para ver detalhes do projeto" data-title="JBL Auditive"
+                                data-description="Landing page de produto projetada para a JBL, com foco em apresentar recursos de áudio, demonstrar diferenciais e gerar interesse. A experiência prioriza velocidade, clareza visual e chamadas à ação objetivas."
+                                data-tech="HTML5, CSS3, JavaScript" data-link="https://jblauditive.netlify.app/">
 
                             <div class="card-body">
                                 <div class="project-card-header">
                                     <h5 class="card-title">JBL <span class="geral-span">AUDITIVE</span></h5>
                                     <div class="project-badges mt-2">
-                                        <a class="project-badge live" href="https://jblauditive.netlify.app/" target="_blank">Ao vivo</a>
-                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                        <a class="project-badge live" href="https://jblauditive.netlify.app/"
+                                            target="_blank">Ao vivo</a>
+                                        <a class="project-badge github"
+                                            href="https://github.com/afonsowebdev?tab=repositories"
+                                            target="_blank">GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -259,14 +310,20 @@
 
                     <div class="col-md-4 col-lg-4">
                         <div class="card project-card shadow-sm h-100">
-                            <img src="./assets/img/projetos-img/sofitnessgym.png" class="card-img-top open-modal" title="Clique para ver detalhes do projeto" data-title="SOFITNESS" data-description="Landing page de serviços fitness desenvolvida para destacar treinos, planos e infraestrutura. O layout foca em conversão, clareza de informações e navegação fluida para públicos mobile e desktop." data-tech="HTML5, CSS3, JavaScript" data-link="https://sofitnessgym.netlify.app/">
+                            <img src="./assets/img/projetos-img/sofitnessgym.png" class="card-img-top open-modal"
+                                title="Clique para ver detalhes do projeto" data-title="SOFITNESS"
+                                data-description="Landing page de serviços fitness desenvolvida para destacar treinos, planos e infraestrutura. O layout foca em conversão, clareza de informações e navegação fluida para públicos mobile e desktop."
+                                data-tech="HTML5, CSS3, JavaScript" data-link="https://sofitnessgym.netlify.app/">
 
                             <div class="card-body">
                                 <div class="project-card-header">
                                     <h5 class="card-title">SOFIT<span class="geral-span">NESS</span></h5>
                                     <div class="project-badges mt-2">
-                                        <a class="project-badge live" href="https://sofitnessgym.netlify.app/" target="_blank">Ao vivo</a>
-                                        <a class="project-badge github" href="https://github.com/afonsowebdev?tab=repositories" target="_blank">GitHub</a>
+                                        <a class="project-badge live" href="https://sofitnessgym.netlify.app/"
+                                            target="_blank">Ao vivo</a>
+                                        <a class="project-badge github"
+                                            href="https://github.com/afonsowebdev?tab=repositories"
+                                            target="_blank">GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -306,17 +363,18 @@
             </div>
         </div>
 
-        
-
         <section class="services" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-2">
+                        <span class="skills__eyebrow" data-i18n="services.eyebrow">Serviço</span>
                         <h2 class="services__title">
-                            <span data-i18n="services.title.first">Meus</span> <span class="subtitle__span" data-i18n="services.title.last">Serviços</span>
+                            <span data-i18n="services.title.first">Meus</span> <span class="subtitle__span"
+                                data-i18n="services.title.last">Serviços</span>
                         </h2>
                         <hr class="underline services-underline">
-                        <p class="text-center mb-3" data-i18n="services.subtitle">Descubra os serviços que ofereço como desenvolvedor web
+                        <p class="text-center mb-3" data-i18n="services.subtitle">Descubra os serviços que ofereço como
+                            desenvolvedor web
                             full-stack.</p>
                     </div>
 
@@ -328,8 +386,10 @@
                                 <span class="service-icon-span mb-3 d-flex justify-content-center align-items-center">
                                     <i class='bx bx-code-alt'></i>
                                 </span>
-                                <h5 class="card-title fw-semibold" data-i18n="services.frontend.title">Desenvolvimento Front-End</h5>
-                                <p class="card-text small" data-i18n="services.frontend.desc">Criação de interfaces responsivas e atraentes utilizando
+                                <h5 class="card-title fw-semibold" data-i18n="services.frontend.title">Desenvolvimento
+                                    Front-End</h5>
+                                <p class="card-text small" data-i18n="services.frontend.desc">Criação de interfaces
+                                    responsivas e atraentes utilizando
                                     HTML,
                                     CSS e JavaScript.</p>
 
@@ -341,8 +401,10 @@
                                 <span class="service-icon-span mb-3 d-flex justify-content-center align-items-center">
                                     <i class='bx bxs-server service-icon'></i>
                                 </span>
-                                <h5 class="card-title fw-semibold" data-i18n="services.backend.title">Desenvolvimento Back-End</h5>
-                                <p class="card-text small" data-i18n="services.backend.desc">Implementação de servidores, bancos de dados e APIs com
+                                <h5 class="card-title fw-semibold" data-i18n="services.backend.title">Desenvolvimento
+                                    Back-End</h5>
+                                <p class="card-text small" data-i18n="services.backend.desc">Implementação de
+                                    servidores, bancos de dados e APIs com
                                     Node.js
                                     e PHP.</p>
                             </div>
@@ -354,7 +416,8 @@
                                     <i class='bx bxs-palette service-icon'></i>
                                 </span>
                                 <h5 class="card-title fw-semibold" data-i18n="services.uiux.title">Design UI/UX</h5>
-                                <p class="card-text small" data-i18n="services.uiux.desc">Criação de designs intuitivos focados na experiência do
+                                <p class="card-text small" data-i18n="services.uiux.desc">Criação de designs intuitivos
+                                    focados na experiência do
                                     usuário.</p>
                             </div>
                         </div>
@@ -363,73 +426,206 @@
         </section>
 
         <section class="skills" id="skills">
+            <div class="dots-layer" aria-hidden="true">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-4">
+                        <span class="skills__eyebrow" data-i18n="skills.eyebrow">Stack Técnico</span>
                         <h2 class="skills__title">
-                            <span data-i18n="skills.title.first">Minhas</span> <span class="subtitle__span" data-i18n="skills.title.last">Habilidades</span>
+                            <span data-i18n="skills.title.first">Minhas</span> <span class="subtitle__span"
+                                data-i18n="skills.title.last">Habilidades</span>
                         </h2>
                         <hr class="underline skills-underline">
-                        <p class="text-center mb-3" data-i18n="skills.subtitle">Aqui estão algumas das minhas principais habilidades técnicas.
+                        <p class="text-center mb-3" data-i18n="skills.subtitle">Aqui estão algumas das minhas principais
+                            habilidades técnicas.
                         </p>
                     </div>
 
-                    <div class="skills d-flex justify-content-space-between gap-4">
-                        <div class="col-md-6 text-center">
-                            <h2 class="skills-subtitle" data-i18n-html="skills.frontend.title.first">Front-<span class="">End</span></h2>
-                            <hr class="underline skills-underline mb-4">
-
-
-                            <div class="frontend">
-                                <ul class="skills__list d-flex flex-wrap justify-content-center gap-4">
-                                    <li class="skills__item" id="html"> <i class='bx bxl-html5 skill-icon'></i> HTML5
-                                    </li>
-                                    <li class="skills__item" id="css"> <i class='bx bxl-css3 skill-icon'></i> CSS3</li>
-                                    <li class="skills__item" id="js"> <i class='bx bxl-javascript skill-icon'></i>
-                                        JavaScript
-                                    </li>
-                                    <li class="skills__item" id="react"> <i class='bx bxl-react skill-icon'></i> React
-                                    </li>
-                                    <li class="skills__item" id="angular"> <i class='bx bxl-angular skill-icon'></i>
-                                        Angular
-                                    </li>
-                                    <li class="skills__item" id="bootstrap"> <i class='bx bxl-bootstrap skill-icon'></i>
-                                        Bootstrap
-                                    </li>
-                                    <li class="skills__item" id="tailwind"> <i
-                                            class='bx bxl-tailwind-css skill-icon'></i>
-                                        Tailwind
-                                    </li>
-                                    <li class="skills__item" id="jquery"> <i class='bx bxl-jquery'></i>
-                                        JQuery
-                                    </li>
-                                </ul>
-                            </div>
+                    <!-- Filtros por categoria -->
+                    <div class="col-12 d-flex justify-content-center mb-4">
+                        <div class="skills-filters" role="group" aria-label="Filtrar habilidades por categoria">
+                            <button type="button" class="skills-filter is-active" data-filter="all" aria-pressed="true"
+                                data-i18n="skills.filter.all">Todas</button>
+                            <button type="button" class="skills-filter" data-filter="frontend" aria-pressed="false"
+                                data-i18n="skills.filter.frontend">Front-End</button>
+                            <button type="button" class="skills-filter" data-filter="backend" aria-pressed="false"
+                                data-i18n="skills.filter.backend">Back-End</button>
                         </div>
+                    </div>
 
-                        <div class="col-md-6 text-center">
-                            <h2 class="skills-subtitle" data-i18n-html="skills.backend.title.first">Back-<span class="">End</span></h2>
-                            <hr class="underline skills-underline mb-4">
+                    <!-- Grelha de habilidades -->
+                    <div class="col-12">
+                        <div class="skills-grid">
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-html5'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">HTML5</h3>
+                                        <span class="skill-card__pct">95%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:95%"></span></div>
+                                </div>
+                            </article>
 
-                            <div class="backend">
-                                <ul class="skills__list d-flex flex-wrap justify-content-center gap-4">
-                                    <li class="skills__item" id="nodejs"> <i class='bx bxl-nodejs skill-icon'></i>
-                                        Node.js
-                                    </li>
-                                    <li class="skills__item" id="php"> <i class='bx bxl-php skill-icon'></i> PHP</li>
-                                    <li class="skills__item" id="python"> <i class='bx bxl-python skill-icon'></i>
-                                        Python</li>
-                                    <li class="skills__item" id="mysql"> <i class='bx bxs-data skill-icon'></i> MySQL
-                                    </li>
-                                    <li class="skills__item" id="mongodb"> <i class='bx bxl-mongodb skill-icon'></i>
-                                        MongoDB
-                                    </li>
-                                    <li class="skills__item" id="git"> <i class='bx bxl-git skill-icon'></i> Git</li>
-                                    <li class="skills__item" id="github"> <i class='bx bxl-github skill-icon'></i>
-                                        GitHub
-                                    </li>
-                                </ul>
-                            </div>
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-css3'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">CSS3</h3>
+                                        <span class="skill-card__pct">92%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:92%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-javascript'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">JavaScript</h3>
+                                        <span class="skill-card__pct">88%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:88%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-react'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">React</h3>
+                                        <span class="skill-card__pct">82%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:82%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-angular'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Angular</h3>
+                                        <span class="skill-card__pct">72%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:72%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-bootstrap'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Bootstrap</h3>
+                                        <span class="skill-card__pct">90%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:90%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-tailwind-css'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Tailwind</h3>
+                                        <span class="skill-card__pct">85%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:85%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="frontend">
+                                <div class="skill-card__icon"><i class='bx bxl-jquery'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">jQuery</h3>
+                                        <span class="skill-card__pct">78%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:78%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-nodejs'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Node.js</h3>
+                                        <span class="skill-card__pct">80%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:80%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-php'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">PHP</h3>
+                                        <span class="skill-card__pct">78%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:78%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-python'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Python</h3>
+                                        <span class="skill-card__pct">75%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:75%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxs-data'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">MySQL</h3>
+                                        <span class="skill-card__pct">82%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:82%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-mongodb'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">MongoDB</h3>
+                                        <span class="skill-card__pct">76%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:76%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-git'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">Git</h3>
+                                        <span class="skill-card__pct">88%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:88%"></span></div>
+                                </div>
+                            </article>
+
+                            <article class="skill-card" data-category="backend">
+                                <div class="skill-card__icon"><i class='bx bxl-github'></i></div>
+                                <div class="skill-card__body">
+                                    <div class="skill-card__top">
+                                        <h3 class="skill-card__name">GitHub</h3>
+                                        <span class="skill-card__pct">85%</span>
+                                    </div>
+                                    <div class="skill-card__bar"><span style="--level:85%"></span></div>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -443,8 +639,10 @@
                 <div class="row">
 
                     <div class="col-12 text-center mb-4">
+                        <span class="skills__eyebrow" data-i18n="contact.eyebrow">Contacto</span>
                         <h2 class="contact__title">
-                            <span data-i18n="contact.title.first">Entre em</span> <span class="subtitle__span" data-i18n="contact.title.last">Contato</span>
+                            <span data-i18n="contact.title.first">Entre em</span> <span class="subtitle__span"
+                                data-i18n="contact.title.last">Contato</span>
                         </h2>
                         <hr class="underline contact-underline">
                         <p class="text-center mb-3" data-i18n="contact.subtitle">
@@ -572,14 +770,16 @@
 
                                     <div class="form-field">
                                         <label for="validationCustom04" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="validationCustom04" rows="4" required></textarea>
+                                        <textarea class="form-control" id="validationCustom04" rows="4"
+                                            required></textarea>
                                         <div class="invalid-feedback">
                                             Por favor, insira sua mensagem.
                                         </div>
                                     </div>
 
                                     <div class="form-field">
-                                        <button class="btn btn-primary d-flex justify-content-center w-100 py-2" type="submit">Enviar mensagem</button>
+                                        <button class="btn btn-primary d-flex justify-content-center w-100 py-2"
+                                            type="submit">Enviar mensagem</button>
                                     </div>
                                 </form>
                             </div>
@@ -591,10 +791,38 @@
     </main>
 
     <footer class="footer-container">
+        <div class="dots-layer" aria-hidden="true">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center footer-content d-flex justify-content-center align-items-center  mt-2">
-                    <p class="footer-text">&copy; 2026 Francisco Ngonde Afonso. Todos os direitos reservados.</p>
+            <div class="footer-bar">
+                <!-- Esquerda: logo -->
+                <a class="footer-brand" href="#hero" aria-label="Francisco Afonso — início">
+                    <span class="brand-mark">FA</span>
+                    <span class="footer-brand-text">
+                        <strong>Francisco Afonso</strong>
+                        <small data-i18n="hero.eyebrow">Desenvolvedor Web</small>
+                    </span>
+                </a>
+
+                <!-- Centro: copyright -->
+                <p class="footer-text" data-i18n="footer.bottom.rights">&copy; 2026 Francisco Ngonde Afonso.
+                    Todos os direitos reservados.</p>
+
+                <!-- Direita: redes sociais + voltar ao topo -->
+                <div class="footer-actions">
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/francisco-ngonde-afonso/" target="_blank" rel="noreferrer"
+                            aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/afonsowebdev" target="_blank" rel="noreferrer"
+                            aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/afonso.developer" target="_blank" rel="noreferrer"
+                            aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -608,7 +836,8 @@
             class="floating-whatsapp" target="_blank" rel="noreferrer" aria-label="Contactar no WhatsApp">
             <i class='bx bxl-whatsapp'></i>
         </a>
-        <a href="https://github.com/afonsowebdev?tab=repositories" target="_blank" class="floating-github" aria-label="Ver mais projetos no GitHub" title="Ver mais projetos no GitHub">
+        <a href="https://github.com/afonsowebdev?tab=repositories" target="_blank" class="floating-github"
+            aria-label="Ver mais projetos no GitHub" title="Ver mais projetos no GitHub">
             <i class='bx bxl-github'></i>
         </a>
     </div>

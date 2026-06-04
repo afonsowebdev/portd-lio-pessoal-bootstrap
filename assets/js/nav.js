@@ -3,11 +3,18 @@ export function initNav() {
   const offcanvasEl = document.getElementById("mobileOffcanvas");
   const offcanvasInstance = offcanvasEl && window.bootstrap ? window.bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl) : null;
   const mobileLinks = offcanvasEl?.querySelectorAll(".nav-link") ?? [];
+  const hamburger = document.querySelector(".hamburger");
 
   if (nav) {
     const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  // sincroniza o estado do botão hamburger (anima para "X" quando o menu abre)
+  if (offcanvasEl && hamburger) {
+    offcanvasEl.addEventListener("show.bs.offcanvas", () => hamburger.setAttribute("aria-expanded", "true"));
+    offcanvasEl.addEventListener("hide.bs.offcanvas", () => hamburger.setAttribute("aria-expanded", "false"));
   }
 
   // fechar offcanvas quando clicar em um link interno

@@ -9,7 +9,7 @@ const LANG_META = {
   en: { label: "English",   short: "EN", flag: "EN" },
   fr: { label: "Français",  short: "FR", flag: "FR" }
 };
-
+ 
 let current = FALLBACK;
 
 function detectInitialLang() {

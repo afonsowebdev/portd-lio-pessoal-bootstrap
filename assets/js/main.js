@@ -5,6 +5,7 @@ import { initReveal, initRotatingRole, initStatsCounter, initProjectFilter } fro
 import { initProjectModal } from "./modal.js";
 import { initValidation } from "./validation.js";
 import { initFadeInAnimations } from "./fade-in.js";
+import { initSkillsTabs } from "./skills.js";
 
 function initHeaderScroll() {
   const header = document.querySelector(".site-nav");
@@ -25,16 +26,28 @@ function initLangToggle() {
   const button = document.querySelector("[data-lang-toggle]");
   if (!button) return;
 
+  // Ciclo entre os idiomas preparados: Português → Inglês → Francês → ...
+  const order = ["pt", "en", "fr"];
+  const shortLabel = { pt: "PT", en: "EN", fr: "FR" };
+  const ariaLabel = {
+    pt: "Mudar idioma para português",
+    en: "Mudar idioma para inglês",
+    fr: "Mudar idioma para francês"
+  };
+
+  const nextOf = (lang) => order[(order.indexOf(lang) + 1) % order.length];
+
+  // O botão mostra o próximo idioma para o qual vai mudar.
   const updateLabel = () => {
-    const current = getCurrentLang();
-    button.textContent = current === "pt" ? "EN" : "PT";
-    button.setAttribute("aria-label", current === "pt" ? "Mudar idioma para inglês" : "Mudar idioma para português");
+    const next = nextOf(getCurrentLang());
+    button.textContent = shortLabel[next];
+    button.setAttribute("aria-label", ariaLabel[next]);
   };
 
   updateLabel();
 
   button.addEventListener("click", () => {
-    setLanguage(getCurrentLang() === "pt" ? "en" : "pt");
+    setLanguage(nextOf(getCurrentLang()));
     updateLabel();
   });
 
@@ -54,4 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initProjectFilter();
   initProjectModal();
   initValidation();
+  initSkillsTabs();
 });

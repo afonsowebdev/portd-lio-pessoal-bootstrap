@@ -3,6 +3,7 @@
 @import url('/assets/css/base/variables.css');
 @import url('/assets/css/base/css-geral.css');
 @import url('/assets/css/animations/fade-in.css');
+@import url('/assets/css/animations/dots.css');
 
 @import url('/assets/css/layout/header.css');
 @import url('/assets/css/layout/hero.css');
